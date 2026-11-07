@@ -1,0 +1,2446 @@
+{
+ "meta": {
+  "as_of": "2026-11-06",
+  "site": "https://www.greatairace.com",
+  "version": "1.0",
+  "lanes": [
+   {
+    "key": "money",
+    "label": "Money",
+    "desc": "Valuation or market cap, plus annualized revenue run rate"
+   },
+   {
+    "key": "reach",
+    "label": "Reach",
+    "desc": "Reported active users, plus share of worldwide gen-AI web traffic"
+   },
+   {
+    "key": "brains",
+    "label": "Brains",
+    "desc": "Artificial Analysis Intelligence Index v5, plus Text Arena rank"
+   },
+   {
+    "key": "muscle",
+    "label": "Muscle",
+    "desc": "Largest single AI data center by current IT power (Epoch AI estimates)"
+   },
+   {
+    "key": "momentum",
+    "label": "Momentum",
+    "desc": "Major model releases in the last six months"
+   },
+   {
+    "key": "openness",
+    "label": "Openness",
+    "desc": "Open-weight releases and how recent the latest one is"
+   }
+  ],
+  "default_weights": {
+   "money": 1,
+   "reach": 1,
+   "brains": 1,
+   "muscle": 1,
+   "momentum": 1,
+   "openness": 1
+  },
+  "index_note": "Artificial Analysis moved to Intelligence Index v5 around Oct 28 2026. v5 scores are not comparable to v4.x scores.",
+  "conflicts": [
+   {
+    "topic": "Gemini users",
+    "text": "Google reports 1 billion+ Gemini monthly active users (app + web, Oct 28 2026). Sensor Tower estimates 591M mobile-app MAU (Q3 2026). Different scope; we score Google's own figure and show both.",
+    "source": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/"
+   },
+   {
+    "topic": "OpenAI valuation",
+    "text": "$852B is the last confirmed primary round (Mar 2026). StockAnalysis shows a $993.7B implied secondary-market valuation (Oct 29 2026). We score the primary round.",
+    "source": "https://stockanalysis.com/private/openai/valuation/"
+   },
+   {
+    "topic": "OpenAI revenue",
+    "text": "~$50B run rate in Sept 2026 per FT/Reuters, about $20B below earlier company signals.",
+    "source": "https://sacra.com/c/openai/"
+   },
+   {
+    "topic": "OpenAI Abilene power",
+    "text": "Epoch AI lists Stargate Abilene at 824 MW current IT power; OfficeChai (Nov 1 2026, citing Epoch) lists ~421 MW.",
+    "source": "https://officechai.com/ai/these-are-the-10-biggest-datacenters-in-the-world-oct-2026/"
+   },
+   {
+    "topic": "Anthropic revenue",
+    "text": "$65B run rate (Axios, Aug 2026). The S-1/A shows Q3 2026 revenue of $16.956B (about $67.8B annualized). Unverified reports claim more than $80B.",
+    "source": "https://www.indmoney.com/blog/us-stocks/anthropic-ipo-s1-filing-explained"
+   },
+   {
+    "topic": "xAI valuation",
+    "text": "The $2.0T figure is SpaceX's total market cap, not xAI alone. Share-price sources also disagree ($146.90 vs $134.97).",
+    "source": "https://stockanalysis.com/list/biggest-companies"
+   },
+   {
+    "topic": "Qwen users",
+    "text": "QuestMobile: 158.17M MAU (Sept 2026). Alibaba's annual report: 295M MAU across all platforms (Mar 2026). Different scope and method.",
+    "source": "https://www.sec.gov/Archives/edgar/data/0001577552/000119312526274928/d133513dex991.pdf"
+   },
+   {
+    "topic": "DeepSeek valuation",
+    "text": "Above $50B after its first outside round (Jun 2026). Unverified secondary claims of $74B exist.",
+    "source": "https://officechai.com/ai/deepseek-raises-7-4-billion-at-50-billion-valuation-becomes-chinas-most-valuable-ai-startup/"
+   },
+   {
+    "topic": "Mistral funding",
+    "text": "Sacra lists a June 2026 \"$3.5B at $20B\" raise that is likely the same EUR 3B Series D reported by Orrick.",
+    "source": "https://www.orrick.com/en/News/2026/09/Orrick-Advises-Mistral-in-its-3B-Series-D-at-21B-Post-Money-Valuation"
+   },
+   {
+    "topic": "Index versions",
+    "text": "Grok 4.5 scored 54 and Kimi K3 scored 57 on the pre-v5 Artificial Analysis index. Those scores are not comparable to v5 and are not used.",
+    "source": "https://artificialanalysis.ai/articles/four-frontier-launches-in-eight-days-six-labs-now-field-a-model-above-50-on-the-artificial-analysis-intelligence-index"
+   }
+  ],
+  "disclaimer": "Independent; not affiliated with any AI lab. Not investment advice."
+ },
+ "racers": [
+  {
+   "id": "openai",
+   "name": "OpenAI",
+   "founded": {
+    "value": 2015,
+    "source": "https://openai.com/about/",
+    "date": null,
+    "note": "Well-established fact; page not fetched this run"
+   },
+   "hq": {
+    "value": "San Francisco, CA, USA",
+    "source": "https://openai.com/about/",
+    "date": null,
+    "note": "Well-established fact; page not fetched this run"
+   },
+   "flagship_model": {
+    "value": "GPT-6 Astra (released Sep 3-4 2026); GPT-6.1 Sol latest release (Sep 29 2026)",
+    "source": "https://presenc.ai/research/openai-gpt-model-lineage-2026",
+    "date": "2026-10-01",
+    "note": "GPT-6.1 Astra reportedly held back at DevDay"
+   },
+   "total_funding_usd": {
+    "value": 178070000000.0,
+    "source": "https://stockanalysis.com/private/openai/valuation/",
+    "date": "2026-10-29",
+    "note": "Aggregator figure, 11 rounds; Sacra also lists $178B"
+   },
+   "money": {
+    "valuation_usd": {
+     "value": 852000000000.0,
+     "source": "https://sacra.com/c/openai/",
+     "date": "2026-03-31",
+     "note": "Last confirmed primary round ($122B raise). CONFLICT: StockAnalysis implied secondary-market valuation $993.7B as of 2026-10-29 (https://stockanalysis.com/private/openai/valuation/). Confidential IPO filing June 8 2026, reportedly targeting >$1T."
+    },
+    "annualized_revenue_usd": {
+     "value": 50000000000.0,
+     "source": "https://sacra.com/c/openai/",
+     "date": "2026-09",
+     "note": "~$50B run rate in Sept 2026 per FT/Reuters reporting (Oct 8 2026). CONFLICT: earlier company signals of ~$70B year-end target; US News headline says Sept run rate was ~$20B below what was previously signaled (https://money.usnews.com/investing/news/articles/2026-10-08/openais-annualized-revenue-20-billion-less-than-previously-signaled-ft-reports, not fully fetched)."
+    },
+    "profit_loss": {
+     "value": "Loss-making; FT (Sept 2026) reports projected cumulative negative free cash flow of ~$278B over 2026-2030; ~33% gross margin",
+     "source": "https://sacra.com/c/openai/",
+     "date": "2026-09",
+     "note": "No audited 2026 net loss public (no public S-1 yet). 2025 loss ~ $8B per https://www.tmgm.com/de/analysis/market-news/ai-leader-faces-growth-and-profitability-challenges (undated, secondary)."
+    }
+   },
+   "reach": {
+    "active_users": {
+     "value": "~1 billion weekly active users (ChatGPT)",
+     "source": "https://thenextweb.com/news/chatgpt-1-billion-weekly-active-users-openai-target",
+     "date": "2026-07-29",
+     "note": "Based on internal numbers reported by The Information, not a public OpenAI statement. Sacra lists >1B WAU (undated)."
+    },
+    "app_mau_sensor_tower": {
+     "value": "1.4 billion MAU (ChatGPT app), >60% of group users, +70% YoY",
+     "source": "https://www.trendingtopics.eu/sensor-tower-claude-growth-chatgpt-gemini/",
+     "date": "2026-11-04",
+     "note": "Sensor Tower Q3 2026 data as reported by Trending Topics"
+    },
+    "similarweb_web_share_pct": {
+     "value": 56.4,
+     "source": "https://officechai.com/ai/geminis-traffic-share-falls-for-fourth-straight-month-as-chatgpt-regains-ground-similarweb-data/",
+     "date": "2026-09",
+     "note": "Share of worldwide gen-AI website traffic, Sept 2026, published Oct 12 2026"
+    }
+   },
+   "brains": {
+    "aa_intelligence_index": {
+     "value": {
+      "model": "GPT-6 Astra (max)",
+      "score": 57
+     },
+     "source": "https://capitalandcompute.net/md/artificial-analysis-index-v5-which-models-dropped.md",
+     "date": "2026-11-04",
+     "note": "Artificial Analysis Intelligence Index v5 (launched ~Oct 28 2026; not comparable to v4.x scores). Secondary summary of AA data; artificialanalysis.ai not fetchable from this session."
+    },
+    "arena_text_rank": {
+     "value": null,
+     "source": "https://officechai.com/ai/gemini-4-carbon-tops-text-arena-places-2nd-on-agent-arena/",
+     "date": "2026-10-28",
+     "note": "No OpenAI model in the Text Arena top 5 as of Oct 28 2026; exact rank not found"
+    }
+   },
+   "muscle": {
+    "compute": {
+     "value": "OpenAI Stargate Abilene: 824 MW current IT power (Epoch AI estimate)",
+     "source": "https://epoch.ai/graphs/largest-ai-data-centers-by-power-capacity",
+     "date": "2026-11-06",
+     "note": "CONFLICT: OfficeChai (Nov 1 2026, citing Epoch) lists Abilene at ~421 MW (https://officechai.com/ai/these-are-the-10-biggest-datacenters-in-the-world-oct-2026/). Company says it secured 10 GW of US compute capacity (contracted, not necessarily online) - https://the-decoder.com/openai-says-it-hit-its-10-gigawatt-compute-goal-years-ahead-of-schedule/ (2026-04-30)"
+    }
+   },
+   "momentum": {
+    "growth": {
+     "value": "Run-rate ~2.5x: ~$20B end-2025 -> ~$50B Sept 2026; ChatGPT app MAU +70% YoY (Sensor Tower Q3)",
+     "source": "https://sacra.com/c/openai/",
+     "date": "2026-09"
+    },
+    "major_releases_last_6mo": {
+     "value": 5,
+     "source": "https://presenc.ai/research/openai-gpt-model-lineage-2026",
+     "date": "2026-10-01",
+     "note": "Count since May 6 2026: GPT-5.6 Sol preview (Jun 26), GPT-5.6 Sol/Terra/Luna (Jul 9), GPT-6 Astra (Sep 3), GPT-6 Sol + Luna (Sep 22), GPT-6.1 Sol (Sep 29). Counting method: launch events."
+    }
+   },
+   "openness": {
+    "open_weights": {
+     "value": true,
+     "source": null,
+     "date": null,
+     "note": "gpt-oss-120b/20b open weights (Aug 2025) are known but were NOT re-verified this run; no newer OpenAI open-weight release found in 2026 sources"
+    },
+    "latest_open_model": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "gpt-oss (Aug 2025) - unverified this run; no source URL fetched"
+    }
+   },
+   "slug": "openai",
+   "short": "OpenAI",
+   "emblem": {
+    "pattern": "hoops",
+    "c1": "#00e5ff",
+    "c2": "#0a2540",
+    "svg": "<svg class=\"emblem\" viewBox=\"0 0 64 64\" width=\"64\" height=\"64\" aria-hidden=\"true\"><defs><clipPath id=\"cl-x\"><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\"/></clipPath></defs><g clip-path=\"url(#cl-x)\"><rect width=\"64\" height=\"64\" fill=\"#00e5ff\"/><rect x=\"0\" y=\"14\" width=\"64\" height=\"7\" fill=\"#0a2540\"/><rect x=\"0\" y=\"28\" width=\"64\" height=\"7\" fill=\"#0a2540\"/><rect x=\"0\" y=\"42\" width=\"64\" height=\"7\" fill=\"#0a2540\"/></g><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\" fill=\"none\" stroke=\"#0d1526\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></svg>"
+   },
+   "scoring": {
+    "lanes": {
+     "money": 77.5,
+     "reach": 100.0,
+     "brains": 96.6,
+     "muscle": 79.5,
+     "momentum": 83.3,
+     "openness": 50.0
+    },
+    "detail": {
+     "money": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Valuation / market cap",
+        "score": 79.5,
+        "scale": "log"
+       },
+       {
+        "label": "Annualized revenue",
+        "score": 75.4,
+        "scale": "log"
+       }
+      ]
+     },
+     "reach": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Active users",
+        "score": 100.0,
+        "scale": "log"
+       },
+       {
+        "label": "Web traffic share",
+        "score": 100.0,
+        "scale": "linear"
+       }
+      ]
+     },
+     "brains": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "AA Intelligence Index v5",
+        "score": 96.6,
+        "scale": "linear"
+       },
+       {
+        "label": "Text Arena rank",
+        "score": null,
+        "scale": "rank"
+       }
+      ]
+     },
+     "muscle": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Largest site, current MW",
+        "score": 79.5,
+        "scale": "linear"
+       }
+      ]
+     },
+     "momentum": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Releases, last 6 months",
+        "score": 83.3,
+        "scale": "linear"
+       }
+      ]
+     },
+     "openness": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Open weights; latest release date not verified",
+        "score": 50.0,
+        "scale": "rule"
+       }
+      ]
+     }
+    },
+    "inputs": {
+     "valuation": {
+      "value": 852000000000.0,
+      "from": "money.valuation_usd",
+      "how": "Last primary round"
+     },
+     "revenue": {
+      "value": 50000000000.0,
+      "from": "money.annualized_revenue_usd",
+      "how": null
+     },
+     "users": {
+      "value": 1000000000.0,
+      "from": "reach.active_users",
+      "how": "~1 billion weekly active users (ChatGPT)"
+     },
+     "webshare": {
+      "value": 56.4,
+      "from": "reach.similarweb_web_share_pct",
+      "how": null
+     },
+     "aa": {
+      "value": 57,
+      "from": "brains.aa_intelligence_index",
+      "how": null
+     },
+     "arena": {
+      "value": null,
+      "from": "brains.arena_text_rank",
+      "how": "Not in Text Arena top 5; exact rank not found"
+     },
+     "mw": {
+      "value": 824,
+      "from": "muscle.compute",
+      "how": "Stargate Abilene, 824 MW (Epoch AI)"
+     },
+     "releases": {
+      "value": 5,
+      "from": "momentum.major_releases_last_6mo",
+      "how": null
+     }
+    }
+   },
+   "composite_default": 81.1,
+   "rank_default": 1
+  },
+  {
+   "id": "google-deepmind",
+   "name": "Google DeepMind (Alphabet)",
+   "founded": {
+    "value": "2010 (DeepMind); merged with Google Brain 2023",
+    "source": "https://deepmind.google/about/",
+    "date": null,
+    "note": "Well-established fact; page not fetched this run"
+   },
+   "hq": {
+    "value": "London, UK (DeepMind); Alphabet in Mountain View, CA",
+    "source": "https://deepmind.google/about/",
+    "date": null,
+    "note": "Well-established fact; page not fetched this run"
+   },
+   "flagship_model": {
+    "value": "Gemini 4 Carbon (announced Oct 28 2026; limited access via Fairwind program); Gemini 4 Argon generally available (~Oct 14 2026)",
+    "source": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/",
+    "date": "2026-10-28"
+   },
+   "total_funding_usd": {
+    "value": null,
+    "source": null,
+    "date": null,
+    "note": "Not applicable - funded by Alphabet (public company)"
+   },
+   "money": {
+    "valuation_usd": {
+     "value": 3870000000000.0,
+     "source": "https://stockanalysis.com/list/biggest-companies",
+     "date": "2026-11-06",
+     "note": "Alphabet market cap (rank #4); page updates daily, no explicit date shown. Note: datastudios reports GOOGL fell 12.6% on Oct 29 to $283.82; StockAnalysis shows $316.80."
+    },
+    "annualized_revenue_usd": {
+     "value": 510400000000.0,
+     "source": "https://www.datastudios.org/post/alphabet-q3-2026-results-google-cloud-doubles-30-7-billion-capex-51-billion",
+     "date": "2026-10-28",
+     "note": "Alphabet total Q3 2026 revenue $127.6B x4 (computed). AI-specific revenue not broken out; Google Cloud Q3 revenue $30.7B (+103% YoY)."
+    },
+    "profit_loss": {
+     "value": "Q3 2026 net income $26.5B (-24% YoY)",
+     "source": "https://www.datastudios.org/post/alphabet-q3-2026-results-google-cloud-doubles-30-7-billion-capex-51-billion",
+     "date": "2026-10-28"
+    }
+   },
+   "reach": {
+    "active_users": {
+     "value": "1 billion+ monthly active users (Gemini app)",
+     "source": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/",
+     "date": "2026-10-28",
+     "note": "Primary source (Pichai Q3 remarks). Passed 1B on Aug 11 2026 per https://www.implicator.ai/google-puts-gemini-at-1-billion-monthly-users-without-naming-paying-subscribers/"
+    },
+    "app_mau_sensor_tower": {
+     "value": "591M MAU (~26% of group users), +166% YoY",
+     "source": "https://www.trendingtopics.eu/sensor-tower-claude-growth-chatgpt-gemini/",
+     "date": "2026-11-04",
+     "note": "CONFLICT with Google's 1B+ (Google counts app + web; Sensor Tower is mobile app estimate)"
+    },
+    "similarweb_web_share_pct": {
+     "value": 25.0,
+     "source": "https://officechai.com/ai/geminis-traffic-share-falls-for-fourth-straight-month-as-chatgpt-regains-ground-similarweb-data/",
+     "date": "2026-09"
+    }
+   },
+   "brains": {
+    "aa_intelligence_index": {
+     "value": {
+      "model": "Gemini 4 Carbon (high)",
+      "score": 59
+     },
+     "source": "https://www.stephanmiller.com/model-buzz-roundup-week-of-1028/",
+     "date": "2026-11-03",
+     "note": "AA v5. Carbon is not publicly available. Best generally available: Gemini 4 Argon = 50 (https://capitalandcompute.net/md/artificial-analysis-index-v5-which-models-dropped.md)"
+    },
+    "arena_text_rank": {
+     "value": {
+      "rank": 1,
+      "model": "Gemini 4 Carbon (High)",
+      "score": 1528
+     },
+     "source": "https://officechai.com/ai/gemini-4-carbon-tops-text-arena-places-2nd-on-agent-arena/",
+     "date": "2026-10-28",
+     "note": "Only ~4,400 votes at time of report. Gemini 4 Argon (High) #2 at 1520."
+    }
+   },
+   "muscle": {
+    "compute": {
+     "value": "Google Pryor North (OK) ~368 MW; Google Columbus (OH) 303 MW (Epoch estimates). Q3 2026 capex $51.4B; 2026 capex guidance $195-205B",
+     "source": "https://officechai.com/ai/these-are-the-10-biggest-datacenters-in-the-world-oct-2026/",
+     "date": "2026-10-31",
+     "note": "Capex: https://www.datastudios.org/post/alphabet-q3-2026-results-google-cloud-doubles-30-7-billion-capex-51-billion ; guidance: https://www.implicator.ai/google-puts-gemini-at-1-billion-monthly-users-without-naming-paying-subscribers/. Google's distributed TPU fleet is not captured well by single-site figures."
+    }
+   },
+   "momentum": {
+    "growth": {
+     "value": "Google Cloud +103% YoY; API tokens ~32B/min, +40% QoQ and >4x YoY",
+     "source": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/",
+     "date": "2026-10-28"
+    },
+    "major_releases_last_6mo": {
+     "value": 4,
+     "source": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/",
+     "date": "2026-10-28",
+     "note": "Minimum count: Gemini 4 Argon, Gemini 4 Carbon, Genie 4, plus Gemini 3.7/3.8 Flash. Exact dates of Flash releases not verified."
+    }
+   },
+   "openness": {
+    "open_weights": {
+     "value": true,
+     "source": "https://www.theregister.com/2026/04/02/googles_gemma_4_open_weights/",
+     "date": "2026-04-02"
+    },
+    "latest_open_model": {
+     "value": "Gemma 4 family (Apache 2.0)",
+     "source": "https://datanorth.ai/news/google-releases-gemma-4-open-models",
+     "date": "2026-04-02",
+     "note": "No later Gemma release verified"
+    }
+   },
+   "slug": "google-deepmind",
+   "short": "Google DeepMind",
+   "emblem": {
+    "pattern": "quarters",
+    "c1": "#39ff88",
+    "c2": "#0b3d2a",
+    "svg": "<svg class=\"emblem\" viewBox=\"0 0 64 64\" width=\"64\" height=\"64\" aria-hidden=\"true\"><defs><clipPath id=\"cl-x\"><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\"/></clipPath></defs><g clip-path=\"url(#cl-x)\"><rect width=\"64\" height=\"64\" fill=\"#39ff88\"/><rect x=\"32\" y=\"0\" width=\"32\" height=\"31\" fill=\"#0b3d2a\"/><rect x=\"0\" y=\"31\" width=\"32\" height=\"33\" fill=\"#0b3d2a\"/></g><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\" fill=\"none\" stroke=\"#0d1526\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></svg>"
+   },
+   "scoring": {
+    "lanes": {
+     "money": 100.0,
+     "reach": 72.2,
+     "brains": 100.0,
+     "muscle": 35.5,
+     "momentum": 66.7,
+     "openness": 70.3
+    },
+    "detail": {
+     "money": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Valuation / market cap",
+        "score": 100.0,
+        "scale": "log"
+       },
+       {
+        "label": "Annualized revenue",
+        "score": 100.0,
+        "scale": "log"
+       }
+      ]
+     },
+     "reach": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Active users",
+        "score": 100.0,
+        "scale": "log"
+       },
+       {
+        "label": "Web traffic share",
+        "score": 44.3,
+        "scale": "linear"
+       }
+      ]
+     },
+     "brains": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "AA Intelligence Index v5",
+        "score": 100.0,
+        "scale": "linear"
+       },
+       {
+        "label": "Text Arena rank",
+        "score": 100.0,
+        "scale": "rank"
+       }
+      ]
+     },
+     "muscle": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Largest site, current MW",
+        "score": 35.5,
+        "scale": "linear"
+       }
+      ]
+     },
+     "momentum": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Releases, last 6 months",
+        "score": 66.7,
+        "scale": "linear"
+       }
+      ]
+     },
+     "openness": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Open weights; latest dated Apr 2, 2026",
+        "score": 70.3,
+        "scale": "rule"
+       }
+      ]
+     }
+    },
+    "inputs": {
+     "valuation": {
+      "value": 3870000000000.0,
+      "from": "money.valuation_usd",
+      "how": "Alphabet market cap (parent company)"
+     },
+     "revenue": {
+      "value": 510400000000.0,
+      "from": "money.annualized_revenue_usd",
+      "how": "Alphabet total revenue run rate (AI not broken out)"
+     },
+     "users": {
+      "value": 1000000000.0,
+      "from": "reach.active_users",
+      "how": "1 billion+ Gemini app MAU (Google)"
+     },
+     "webshare": {
+      "value": 25.0,
+      "from": "reach.similarweb_web_share_pct",
+      "how": null
+     },
+     "aa": {
+      "value": 59,
+      "from": "brains.aa_intelligence_index",
+      "how": null
+     },
+     "arena": {
+      "value": 1,
+      "from": "brains.arena_text_rank",
+      "how": null
+     },
+     "mw": {
+      "value": 368,
+      "from": "muscle.compute",
+      "how": "Pryor North (OK), ~368 MW (Epoch AI); distributed TPU fleet not captured"
+     },
+     "releases": {
+      "value": 4,
+      "from": "momentum.major_releases_last_6mo",
+      "how": null
+     }
+    }
+   },
+   "composite_default": 74.1,
+   "rank_default": 2
+  },
+  {
+   "id": "meta",
+   "name": "Meta (Meta Superintelligence Labs)",
+   "founded": {
+    "value": 2004,
+    "source": "https://about.meta.com/",
+    "date": null,
+    "note": "Well-established fact; page not fetched this run"
+   },
+   "hq": {
+    "value": "Menlo Park, CA, USA",
+    "source": "https://about.meta.com/",
+    "date": null,
+    "note": "Well-established fact"
+   },
+   "flagship_model": {
+    "value": "Muse Wonder (described as Meta's first frontier model)",
+    "source": "https://www.clickondetroit.com/business/2026/10/21/meta-q3-revenue-tops-estimates-and-zuckerberg-says-muse-accounts-have-topped-10-million/",
+    "date": "2026-10-21"
+   },
+   "total_funding_usd": {
+    "value": null,
+    "source": null,
+    "date": null,
+    "note": "Not applicable - public company"
+   },
+   "money": {
+    "valuation_usd": {
+     "value": 1610000000000.0,
+     "source": "https://stockanalysis.com/list/biggest-companies",
+     "date": "2026-11-06",
+     "note": "Meta market cap (rank #9); page updates daily, no explicit date"
+    },
+    "annualized_revenue_usd": {
+     "value": 258400000000.0,
+     "source": "https://www.clickondetroit.com/business/2026/10/21/meta-q3-revenue-tops-estimates-and-zuckerberg-says-muse-accounts-have-topped-10-million/",
+     "date": "2026-10-21",
+     "note": "Total company Q3 2026 revenue $64.6B (+26%) x4 (computed); AI not broken out"
+    },
+    "profit_loss": {
+     "value": "Q3 2026 net income $9.86B (includes $9.89B settlement charge)",
+     "source": "https://www.clickondetroit.com/business/2026/10/21/meta-q3-revenue-tops-estimates-and-zuckerberg-says-muse-accounts-have-topped-10-million/",
+     "date": "2026-10-21"
+    }
+   },
+   "reach": {
+    "active_users": {
+     "value": "Muse agent: 10M+ accounts (US/Canada), ~25% daily use",
+     "source": "https://www.clickondetroit.com/business/2026/10/21/meta-q3-revenue-tops-estimates-and-zuckerberg-says-muse-accounts-have-topped-10-million/",
+     "date": "2026-10-21",
+     "note": "Meta AI assistant MAU not disclosed in 2026 sources found; Q2 call said Meta AI daily users +60% after Muse Spark integration (https://www.nasdaq.com/articles/meta-platforms-q2-earnings-call-highlights)"
+    },
+    "app_mau_sensor_tower": {
+     "value": "Meta AI app MAU +675% YoY (Q3 2026); absolute not stated",
+     "source": "https://www.trendingtopics.eu/sensor-tower-claude-growth-chatgpt-gemini/",
+     "date": "2026-11-04"
+    },
+    "similarweb_web_share_pct": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Meta AI not reported in Similarweb top list (below ~0.9%)"
+    }
+   },
+   "brains": {
+    "aa_intelligence_index": {
+     "value": {
+      "model": "Muse Wonder Full",
+      "score": 50
+     },
+     "source": "https://capitalandcompute.net/md/artificial-analysis-index-v5-which-models-dropped.md",
+     "date": "2026-11-04",
+     "note": "Artificial Analysis Intelligence Index v5 (launched ~Oct 28 2026; not comparable to v4.x scores). Secondary summary of AA data; artificialanalysis.ai not fetchable from this session."
+    },
+    "arena_text_rank": {
+     "value": {
+      "rank": 4,
+      "model": "Muse Wonder (Max)",
+      "score": 1507
+     },
+     "source": "https://officechai.com/ai/gemini-4-carbon-tops-text-arena-places-2nd-on-agent-arena/",
+     "date": "2026-10-28"
+    }
+   },
+   "muscle": {
+    "compute": {
+     "value": "Meta Prometheus (New Albany, OH): 631 MW (target 1 GW); 2026 capex guidance $135-145B",
+     "source": "https://officechai.com/ai/these-are-the-10-biggest-datacenters-in-the-world-oct-2026/",
+     "date": "2026-10-31",
+     "note": "Capex: clickondetroit Q3 report (2026-10-21). Hyperion not covered in fetched sources."
+    }
+   },
+   "momentum": {
+    "growth": {
+     "value": "Revenue +26% YoY Q3; Meta AI app MAU +675% YoY (Sensor Tower)",
+     "source": "https://www.trendingtopics.eu/sensor-tower-claude-growth-chatgpt-gemini/",
+     "date": "2026-11-04"
+    },
+    "major_releases_last_6mo": {
+     "value": 4,
+     "source": "https://www.nasdaq.com/articles/meta-platforms-q2-earnings-call-highlights",
+     "date": "2026-07-29",
+     "note": "Approximate: Muse Spark 1.1, Muse (agent, Aug), Muse Wonder, Muse Spark Open (weights Oct 15). Muse Spark 1.2/1.3 also referenced; dates not fully verified."
+    }
+   },
+   "openness": {
+    "open_weights": {
+     "value": true,
+     "source": "https://orcarouter.ai/blog/muse-spark-open",
+     "date": "2026-10-16"
+    },
+    "latest_open_model": {
+     "value": "Muse Spark Open (~816B MoE, ~42B active; Muse Model License, $20M revenue threshold for paid API use)",
+     "source": "https://orcarouter.ai/blog/muse-spark-open",
+     "date": "2026-10-15"
+    }
+   },
+   "slug": "meta",
+   "short": "Meta",
+   "emblem": {
+    "pattern": "diamonds",
+    "c1": "#4d9bff",
+    "c2": "#ffffff",
+    "svg": "<svg class=\"emblem\" viewBox=\"0 0 64 64\" width=\"64\" height=\"64\" aria-hidden=\"true\"><defs><clipPath id=\"cl-x\"><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\"/></clipPath></defs><g clip-path=\"url(#cl-x)\"><rect width=\"64\" height=\"64\" fill=\"#4d9bff\"/><path d=\"M32 12 L40 22 L32 32 L24 22 Z M20 32 L28 42 L20 52 L12 42 Z M44 32 L52 42 L44 52 L36 42 Z\" fill=\"#ffffff\"/></g><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\" fill=\"none\" stroke=\"#0d1526\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></svg>"
+   },
+   "scoring": {
+    "lanes": {
+     "money": 90.5,
+     "reach": 0.0,
+     "brains": 79.3,
+     "muscle": 60.8,
+     "momentum": 66.7,
+     "openness": 97.1
+    },
+    "detail": {
+     "money": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Valuation / market cap",
+        "score": 88.1,
+        "scale": "log"
+       },
+       {
+        "label": "Annualized revenue",
+        "score": 92.8,
+        "scale": "log"
+       }
+      ]
+     },
+     "reach": {
+      "disclosed": false,
+      "parts": [
+       {
+        "label": "Active users",
+        "score": null,
+        "scale": "log"
+       },
+       {
+        "label": "Web traffic share",
+        "score": null,
+        "scale": "linear"
+       }
+      ]
+     },
+     "brains": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "AA Intelligence Index v5",
+        "score": 84.7,
+        "scale": "linear"
+       },
+       {
+        "label": "Text Arena rank",
+        "score": 73.8,
+        "scale": "rank"
+       }
+      ]
+     },
+     "muscle": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Largest site, current MW",
+        "score": 60.8,
+        "scale": "linear"
+       }
+      ]
+     },
+     "momentum": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Releases, last 6 months",
+        "score": 66.7,
+        "scale": "linear"
+       }
+      ]
+     },
+     "openness": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Open weights; latest dated Oct 15, 2026",
+        "score": 97.1,
+        "scale": "rule"
+       }
+      ]
+     }
+    },
+    "inputs": {
+     "valuation": {
+      "value": 1610000000000.0,
+      "from": "money.valuation_usd",
+      "how": "Meta market cap (parent company)"
+     },
+     "revenue": {
+      "value": 258400000000.0,
+      "from": "money.annualized_revenue_usd",
+      "how": "Meta total revenue run rate (AI not broken out)"
+     },
+     "users": {
+      "value": null,
+      "from": "reach.active_users",
+      "how": "Meta AI MAU not disclosed (10M+ Muse agent accounts is a different measure)"
+     },
+     "webshare": {
+      "value": null,
+      "from": "reach.similarweb_web_share_pct",
+      "how": "Not in Similarweb top list"
+     },
+     "aa": {
+      "value": 50,
+      "from": "brains.aa_intelligence_index",
+      "how": null
+     },
+     "arena": {
+      "value": 4,
+      "from": "brains.arena_text_rank",
+      "how": null
+     },
+     "mw": {
+      "value": 631,
+      "from": "muscle.compute",
+      "how": "Prometheus (OH), 631 MW"
+     },
+     "releases": {
+      "value": 4,
+      "from": "momentum.major_releases_last_6mo",
+      "how": null
+     }
+    }
+   },
+   "composite_default": 65.7,
+   "rank_default": 3
+  },
+  {
+   "id": "anthropic",
+   "name": "Anthropic",
+   "founded": {
+    "value": 2021,
+    "source": "https://www.anthropic.com/company",
+    "date": null,
+    "note": "Well-established fact; page not fetched this run"
+   },
+   "hq": {
+    "value": "San Francisco, CA, USA",
+    "source": "https://www.anthropic.com/company",
+    "date": null,
+    "note": "Well-established fact; page not fetched this run"
+   },
+   "flagship_model": {
+    "value": "Claude Opus 5.5 (released Sep 22 2026)",
+    "source": "https://andrew.ooo/answers/claude-sonnet-5-5-vs-claude-opus-5-5-which-to-use-september-2026/",
+    "date": "2026-09"
+   },
+   "total_funding_usd": {
+    "value": 141100000000.0,
+    "source": "https://www.iposcoop.com/the-ipo-buzz-anthropic-ant-proposed-files-its-s-1/",
+    "date": "2026-06-30",
+    "note": "Per S-1 (filed Oct 26 2026) as reported by IPO Scoop. Older estimates: ~$127-132B (Tracxn/PitchBook)."
+   },
+   "money": {
+    "valuation_usd": {
+     "value": 965000000000.0,
+     "source": "https://the-decoder.com/claude-company-anthropic-nears-a-trillion-dollar-valuation-after-raising-65-billion-in-series-h/",
+     "date": "2026-05-28",
+     "note": "Series H post-money ($65B raise). IPO pending: Reuters reports likely ~$1.5T market cap at listing; marketing could begin week of Nov 9 2026 (https://www.iposcoop.com/the-ipo-buzz-anthropic-ant-proposed-files-its-s-1/, 2026-10-26). FT/Aug investor talk of >$2T."
+    },
+    "annualized_revenue_usd": {
+     "value": 65000000000.0,
+     "source": "https://www.axios.com/2026/08/17/anthropic-revenue-run-rate-ipo-openai",
+     "date": "2026-08-17",
+     "note": "Run rate passed $65B by late July 2026 (Axios; page not fetched, corroborated by useluminix and Reuters syndications). Unverified secondary reports claim >$80B in Oct 2026 (cryptobriefing, not fetchable). S-1/A: Q3 2026 GAAP revenue $16.956B (x4 = ~$67.8B annualized) - https://www.indmoney.com/blog/us-stocks/anthropic-ipo-s1-filing-explained (updated 2026-11-03)."
+    },
+    "profit_loss": {
+     "value": "Nine months to Sep 30 2026: operating loss $1.26B; net loss $104.0B (mostly a $94.3B non-cash fair-value charge on convertible notes). Q2 2026 operating profit $974M; Q3 operating loss $567M.",
+     "source": "https://www.indmoney.com/blog/us-stocks/anthropic-ipo-s1-filing-explained",
+     "date": "2026-11-02",
+     "note": "From S-1 Amendment No.1 (unaudited interim)"
+    }
+   },
+   "reach": {
+    "active_users": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Anthropic has not published Claude MAU/WAU. A '30M daily users' figure circulates from an X post, not company-confirmed - excluded."
+    },
+    "app_mau_sensor_tower": {
+     "value": "~4% of group users; MAU +1,260% YoY (Q3 2026)",
+     "source": "https://www.trendingtopics.eu/sensor-tower-claude-growth-chatgpt-gemini/",
+     "date": "2026-11-04",
+     "note": "Absolute MAU not stated"
+    },
+    "similarweb_web_share_pct": {
+     "value": 9.6,
+     "source": "https://officechai.com/ai/geminis-traffic-share-falls-for-fourth-straight-month-as-chatgpt-regains-ground-similarweb-data/",
+     "date": "2026-09"
+    }
+   },
+   "brains": {
+    "aa_intelligence_index": {
+     "value": {
+      "model": "Claude Opus 5.5 (max)",
+      "score": 58
+     },
+     "source": "https://capitalandcompute.net/md/artificial-analysis-index-v5-which-models-dropped.md",
+     "date": "2026-11-04",
+     "note": "Artificial Analysis Intelligence Index v5 (launched ~Oct 28 2026; not comparable to v4.x scores). Secondary summary of AA data; artificialanalysis.ai not fetchable from this session. Opus 5.5 was #1 on launch of v5 (Oct 28); Gemini 4 Carbon (high) later scored 59 per https://www.stephanmiller.com/model-buzz-roundup-week-of-1028/"
+    },
+    "arena_text_rank": {
+     "value": {
+      "rank": 3,
+      "model": "Claude Opus 5.5 (High)",
+      "score": 1509
+     },
+     "source": "https://officechai.com/ai/gemini-4-carbon-tops-text-arena-places-2nd-on-agent-arena/",
+     "date": "2026-10-28",
+     "note": "Claude Fable 5.1 (Max) #5 at 1504"
+    }
+   },
+   "muscle": {
+    "compute": {
+     "value": "Anthropic-Amazon New Carlisle (IN): 1,037 MW current IT power - largest on Epoch's list",
+     "source": "https://epoch.ai/graphs/largest-ai-data-centers-by-power-capacity",
+     "date": "2026-11-06",
+     "note": "Also leases capacity at xAI's Colossus 2 per OfficeChai/Epoch (https://officechai.com/ai/these-are-the-10-biggest-datacenters-in-the-world-oct-2026/). S-1/A: ~$895.4B aggregate committed compute/infrastructure spend. Series H deals: >10 GW with Google/Broadcom, Amazon, SpaceX."
+    }
+   },
+   "momentum": {
+    "growth": {
+     "value": "Quarterly revenue Q1 $4.73B -> Q2 $11.56B -> Q3 $16.96B (+46.7% QoQ); FY2025 revenue $4.585B",
+     "source": "https://www.indmoney.com/blog/us-stocks/anthropic-ipo-s1-filing-explained",
+     "date": "2026-11-02"
+    },
+    "major_releases_last_6mo": {
+     "value": 6,
+     "source": "https://andrew.ooo/answers/claude-sonnet-5-5-vs-claude-opus-5-5-which-to-use-september-2026/",
+     "date": "2026-09",
+     "note": "Approximate: Claude Opus 4.8 (~May 28), Fable 5 (~Jul), Opus 5 / Sonnet 5 (~Jul), Fable 5.1, Opus 5.5 (Sep 22), Sonnet 5.5 (Sep 28). Several exact dates unverified."
+    }
+   },
+   "openness": {
+    "open_weights": {
+     "value": false,
+     "source": null,
+     "date": null,
+     "note": "No Anthropic open-weight model found"
+    },
+    "latest_open_model": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "None"
+    }
+   },
+   "slug": "anthropic",
+   "short": "Anthropic",
+   "emblem": {
+    "pattern": "chevron",
+    "c1": "#ff7a45",
+    "c2": "#fff1e0",
+    "svg": "<svg class=\"emblem\" viewBox=\"0 0 64 64\" width=\"64\" height=\"64\" aria-hidden=\"true\"><defs><clipPath id=\"cl-x\"><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\"/></clipPath></defs><g clip-path=\"url(#cl-x)\"><rect width=\"64\" height=\"64\" fill=\"#ff7a45\"/><path d=\"M0 20 L32 44 L64 20 L64 32 L32 56 L0 32 Z\" fill=\"#fff1e0\"/></g><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\" fill=\"none\" stroke=\"#0d1526\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></svg>"
+   },
+   "scoring": {
+    "lanes": {
+     "money": 79.7,
+     "reach": 17.0,
+     "brains": 88.8,
+     "muscle": 100.0,
+     "momentum": 100.0,
+     "openness": 0.0
+    },
+    "detail": {
+     "money": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Valuation / market cap",
+        "score": 81.2,
+        "scale": "log"
+       },
+       {
+        "label": "Annualized revenue",
+        "score": 78.2,
+        "scale": "log"
+       }
+      ]
+     },
+     "reach": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Active users",
+        "score": null,
+        "scale": "log"
+       },
+       {
+        "label": "Web traffic share",
+        "score": 17.0,
+        "scale": "linear"
+       }
+      ]
+     },
+     "brains": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "AA Intelligence Index v5",
+        "score": 98.3,
+        "scale": "linear"
+       },
+       {
+        "label": "Text Arena rank",
+        "score": 79.3,
+        "scale": "rank"
+       }
+      ]
+     },
+     "muscle": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Largest site, current MW",
+        "score": 100.0,
+        "scale": "linear"
+       }
+      ]
+     },
+     "momentum": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Releases, last 6 months",
+        "score": 100.0,
+        "scale": "linear"
+       }
+      ]
+     },
+     "openness": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "No open-weight model",
+        "score": 0.0,
+        "scale": "rule"
+       }
+      ]
+     }
+    },
+    "inputs": {
+     "valuation": {
+      "value": 965000000000.0,
+      "from": "money.valuation_usd",
+      "how": "Series H post-money"
+     },
+     "revenue": {
+      "value": 65000000000.0,
+      "from": "money.annualized_revenue_usd",
+      "how": null
+     },
+     "users": {
+      "value": null,
+      "from": "reach.active_users",
+      "how": "Claude user count not published"
+     },
+     "webshare": {
+      "value": 9.6,
+      "from": "reach.similarweb_web_share_pct",
+      "how": null
+     },
+     "aa": {
+      "value": 58,
+      "from": "brains.aa_intelligence_index",
+      "how": null
+     },
+     "arena": {
+      "value": 3,
+      "from": "brains.arena_text_rank",
+      "how": null
+     },
+     "mw": {
+      "value": 1037,
+      "from": "muscle.compute",
+      "how": "New Carlisle (IN), 1,037 MW (Epoch AI)"
+     },
+     "releases": {
+      "value": 6,
+      "from": "momentum.major_releases_last_6mo",
+      "how": null
+     }
+    }
+   },
+   "composite_default": 64.2,
+   "rank_default": 4
+  },
+  {
+   "id": "xai",
+   "name": "xAI (SpaceX AI / Super Intelligence segment)",
+   "founded": {
+    "value": 2023,
+    "source": "https://x.ai/company",
+    "date": null,
+    "note": "Well-established fact; page not fetched this run. Acquired by SpaceX in 2026."
+   },
+   "hq": {
+    "value": "Palo Alto, CA, USA (now within SpaceX)",
+    "source": "https://x.ai/company",
+    "date": null,
+    "note": "Not re-verified this run"
+   },
+   "flagship_model": {
+    "value": "Grok 4.7 (released Sep 21 2026)",
+    "source": "https://geotoolbox.ai/blog/grok-5.md",
+    "date": "2026-11-04",
+    "note": "Grok 5 still in training, not released"
+   },
+   "total_funding_usd": {
+    "value": null,
+    "source": null,
+    "date": null,
+    "note": "Not found; xAI funding now folded into SpaceX (IPO raised $75B in June 2026)"
+   },
+   "money": {
+    "valuation_usd": {
+     "value": 2000000000000.0,
+     "source": "https://stockanalysis.com/list/biggest-companies",
+     "date": "2026-11-06",
+     "note": "This is SpaceX's total market cap (SPCX), not xAI alone. CONFLICT: share price $146.90 on StockAnalysis vs $134.97 on Nov 4 per teslarati. IPO priced ~$1.75T (June 12 2026)."
+    },
+    "annualized_revenue_usd": {
+     "value": 30240000000.0,
+     "source": "https://www.teslarati.com/spacex-spcx-delivers-blockbuster-q3-results-super-intelligence-booms/",
+     "date": "2026-10-20",
+     "note": "Super Intelligence segment Q3 2026 revenue $7.56B (+830% YoY) x4 (computed). CAVEAT: much of SpaceX's AI segment revenue is not Grok (compute/infrastructure; see https://www.lightreading.com/ai-machine-learning/most-of-spacex-s-ai-number-is-not-grok)."
+    },
+    "profit_loss": {
+     "value": "SI segment adjusted EBITDA $5B in Q3 2026; SpaceX GAAP net income $4.4B. xAI lost ~$6.4B in 2025 (S-1).",
+     "source": "https://www.teslarati.com/spacex-spcx-delivers-blockbuster-q3-results-super-intelligence-booms/",
+     "date": "2026-10-20",
+     "note": "2025 loss: https://techcrunch.com/2026/05/20/xai-burned-6-4b-last-year-spacexs-ipo-filing-shows-why-the-spending-is-far-from-over/"
+    }
+   },
+   "reach": {
+    "active_users": {
+     "value": "117M monthly active users of Grok AI features (of 550M combined X+Grok users)",
+     "source": "https://techcrunch.com/2026/05/20/xai-burned-6-4b-last-year-spacexs-ipo-filing-shows-why-the-spending-is-far-from-over/",
+     "date": "2026-03",
+     "note": "From SpaceX S-1; no newer count disclosed in Q3 results"
+    },
+    "app_mau_sensor_tower": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Grok in Sensor Tower comparison set but no figure reported"
+    },
+    "similarweb_web_share_pct": {
+     "value": 2.3,
+     "source": "https://officechai.com/ai/geminis-traffic-share-falls-for-fourth-straight-month-as-chatgpt-regains-ground-similarweb-data/",
+     "date": "2026-09"
+    }
+   },
+   "brains": {
+    "aa_intelligence_index": {
+     "value": {
+      "model": "Grok 4.7 (high)",
+      "score": 35
+     },
+     "source": "https://capitalandcompute.net/md/artificial-analysis-index-v5-which-models-dropped.md",
+     "date": "2026-11-04",
+     "note": "Artificial Analysis Intelligence Index v5 (launched ~Oct 28 2026; not comparable to v4.x scores). Secondary summary of AA data; artificialanalysis.ai not fetchable from this session. CONFLICT/version: Grok 4.5 (high) scored 54 on the pre-v5 index (July 17 2026, https://artificialanalysis.ai/articles/four-frontier-launches-in-eight-days-six-labs-now-field-a-model-above-50-on-the-artificial-analysis-intelligence-index)."
+    },
+    "arena_text_rank": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not in Text Arena top 5 (Oct 28 2026); exact rank not found"
+    }
+   },
+   "muscle": {
+    "compute": {
+     "value": "1.7 GW nameplate compute at end of Q3 2026 (up from 1.4 GW June); Colossus 2 ~946 MW current IT power (Epoch)",
+     "source": "https://www.teslarati.com/spacex-spcx-delivers-blockbuster-q3-results-super-intelligence-booms/",
+     "date": "2026-10-20",
+     "note": "Epoch: https://epoch.ai/graphs/largest-ai-data-centers-by-power-capacity (2026-11-06). Anthropic and Cursor also lease Colossus 2 capacity per OfficeChai."
+    }
+   },
+   "momentum": {
+    "growth": {
+     "value": "SI segment revenue +830% YoY (Q3 2026); nameplate compute 0.6 GW -> 1.7 GW YoY",
+     "source": "https://www.teslarati.com/spacex-spcx-delivers-blockbuster-q3-results-super-intelligence-booms/",
+     "date": "2026-10-20"
+    },
+    "major_releases_last_6mo": {
+     "value": 2,
+     "source": "https://geotoolbox.ai/blog/grok-5.md",
+     "date": "2026-11-04",
+     "note": "Minimum: Grok 4.5 (~July 2026) and Grok 4.7 (Sep 21). Other point releases (4.6?) not verified."
+    }
+   },
+   "openness": {
+    "open_weights": {
+     "value": true,
+     "source": "https://www.outlookbusiness.com/artificial-intelligence/elon-musks-xai-open-sources-grok-25-but-license-restrictions-spark-debate-on-openness",
+     "date": null,
+     "note": "Grok 2.5 weights released (Aug 2025) under restrictive license; article not fetched. No 2026 open release verified."
+    },
+    "latest_open_model": {
+     "value": "Grok 2.5 (restrictive license)",
+     "source": "https://www.outlookbusiness.com/artificial-intelligence/elon-musks-xai-open-sources-grok-25-but-license-restrictions-spark-debate-on-openness",
+     "date": null,
+     "note": "Date from search snippet/memory, not fetched"
+    }
+   },
+   "slug": "xai",
+   "short": "xAI",
+   "emblem": {
+    "pattern": "sash",
+    "c1": "#e8e8ff",
+    "c2": "#5b5bff",
+    "svg": "<svg class=\"emblem\" viewBox=\"0 0 64 64\" width=\"64\" height=\"64\" aria-hidden=\"true\"><defs><clipPath id=\"cl-x\"><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\"/></clipPath></defs><g clip-path=\"url(#cl-x)\"><rect width=\"64\" height=\"64\" fill=\"#e8e8ff\"/><path d=\"M14 0 L28 0 L54 64 L40 64 Z\" fill=\"#5b5bff\"/></g><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\" fill=\"none\" stroke=\"#0d1526\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></svg>"
+   },
+   "scoring": {
+    "lanes": {
+     "money": 80.6,
+     "reach": 27.9,
+     "brains": 59.3,
+     "muscle": 91.2,
+     "momentum": 33.3,
+     "openness": 50.0
+    },
+    "detail": {
+     "money": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Valuation / market cap",
+        "score": 91.1,
+        "scale": "log"
+       },
+       {
+        "label": "Annualized revenue",
+        "score": 70.1,
+        "scale": "log"
+       }
+      ]
+     },
+     "reach": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Active users",
+        "score": 51.8,
+        "scale": "log"
+       },
+       {
+        "label": "Web traffic share",
+        "score": 4.1,
+        "scale": "linear"
+       }
+      ]
+     },
+     "brains": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "AA Intelligence Index v5",
+        "score": 59.3,
+        "scale": "linear"
+       },
+       {
+        "label": "Text Arena rank",
+        "score": null,
+        "scale": "rank"
+       }
+      ]
+     },
+     "muscle": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Largest site, current MW",
+        "score": 91.2,
+        "scale": "linear"
+       }
+      ]
+     },
+     "momentum": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Releases, last 6 months",
+        "score": 33.3,
+        "scale": "linear"
+       }
+      ]
+     },
+     "openness": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Open weights; latest release date not verified",
+        "score": 50.0,
+        "scale": "rule"
+       }
+      ]
+     }
+    },
+    "inputs": {
+     "valuation": {
+      "value": 2000000000000.0,
+      "from": "money.valuation_usd",
+      "how": "SpaceX total market cap, not xAI alone"
+     },
+     "revenue": {
+      "value": 30240000000.0,
+      "from": "money.annualized_revenue_usd",
+      "how": "SpaceX Super Intelligence segment run rate"
+     },
+     "users": {
+      "value": 117000000.0,
+      "from": "reach.active_users",
+      "how": "117M Grok MAU (SpaceX S-1)"
+     },
+     "webshare": {
+      "value": 2.3,
+      "from": "reach.similarweb_web_share_pct",
+      "how": null
+     },
+     "aa": {
+      "value": 35,
+      "from": "brains.aa_intelligence_index",
+      "how": null
+     },
+     "arena": {
+      "value": null,
+      "from": "brains.arena_text_rank",
+      "how": "Not in Text Arena top 5; exact rank not found"
+     },
+     "mw": {
+      "value": 946,
+      "from": "muscle.compute",
+      "how": "Colossus 2, ~946 MW (Epoch AI)"
+     },
+     "releases": {
+      "value": 2,
+      "from": "momentum.major_releases_last_6mo",
+      "how": null
+     }
+    }
+   },
+   "composite_default": 57.1,
+   "rank_default": 5
+  },
+  {
+   "id": "alibaba-qwen",
+   "name": "Alibaba (Qwen)",
+   "founded": {
+    "value": 1999,
+    "source": "https://www.alibabagroup.com/",
+    "date": null,
+    "note": "Well-established fact; not fetched"
+   },
+   "hq": {
+    "value": "Hangzhou, China",
+    "source": "https://www.alibabagroup.com/",
+    "date": null,
+    "note": "Well-established fact"
+   },
+   "flagship_model": {
+    "value": "Qwen3.8-Max (Aug 2026, open weights, 2.4T params)",
+    "source": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465926099220/tm2623667d1_ex99-1.htm",
+    "date": "2026-08-20"
+   },
+   "total_funding_usd": {
+    "value": null,
+    "source": null,
+    "date": null,
+    "note": "Not applicable - public company"
+   },
+   "money": {
+    "valuation_usd": {
+     "value": 248670000000.0,
+     "source": "https://stockanalysis.com/list/biggest-companies",
+     "date": "2026-11-06",
+     "note": "Alibaba market cap (HKG:9988); no explicit date on page"
+    },
+    "annualized_revenue_usd": {
+     "value": 7296000000.0,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465926099220/tm2623667d1_ex99-1.htm",
+     "date": "2026-08-20",
+     "note": "AI-related product revenue $1.824B in June quarter 2026 x4 (computed). AI Cloud & Compute segment: $7.139B (+45% YoY). Group revenue $39.6B."
+    },
+    "profit_loss": {
+     "value": "June quarter 2026 net income $1.539B (-75% YoY); non-GAAP RMB20.7B",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465926099220/tm2623667d1_ex99-1.htm",
+     "date": "2026-08-20",
+     "note": "Primary (SEC 6-K)"
+    }
+   },
+   "reach": {
+    "active_users": {
+     "value": "158.17M MAU (Sept 2026, QuestMobile); DAU 29M (Sep 30)",
+     "source": "https://fourweekmba.com/ai-bytedances-doubao-hits-419m-users-daily-base-6x-qwens/",
+     "date": "2026-09",
+     "note": "CONFLICT: Alibaba's FY2026 annual report says consumer Qwen surpassed 295M MAU across all platforms in March 2026 (https://www.sec.gov/Archives/edgar/data/0001577552/000119312526274928/d133513dex991.pdf) - different scope/methodology"
+    },
+    "app_mau_sensor_tower": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not reported"
+    },
+    "similarweb_web_share_pct": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not in Similarweb top list"
+    }
+   },
+   "brains": {
+    "aa_intelligence_index": {
+     "value": {
+      "model": "Qwen3.8 Max",
+      "score": 34
+     },
+     "source": "https://capitalandcompute.net/md/artificial-analysis-index-v5-which-models-dropped.md",
+     "date": "2026-11-04",
+     "note": "Artificial Analysis Intelligence Index v5 (launched ~Oct 28 2026; not comparable to v4.x scores). Secondary summary of AA data; artificialanalysis.ai not fetchable from this session."
+    },
+    "arena_text_rank": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not found"
+    }
+   },
+   "muscle": {
+    "compute": {
+     "value": "June-quarter 2026 capex $9.975B (+75% YoY)",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465926099220/tm2623667d1_ex99-1.htm",
+     "date": "2026-08-20",
+     "note": "No GW/MW figure found"
+    }
+   },
+   "momentum": {
+    "growth": {
+     "value": "AI-related revenue triple-digit growth for 12th straight quarter; AI cloud +45% YoY",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465926099220/tm2623667d1_ex99-1.htm",
+     "date": "2026-08-20"
+    },
+    "major_releases_last_6mo": {
+     "value": 1,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465926099220/tm2623667d1_ex99-1.htm",
+     "date": "2026-08-20",
+     "note": "Lower bound: only Qwen3.8-Max verified; Alibaba also cites unnamed coding/video/audio/image/music models. Likely undercount."
+    }
+   },
+   "openness": {
+    "open_weights": {
+     "value": true,
+     "source": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465926099220/tm2623667d1_ex99-1.htm",
+     "date": "2026-08-20"
+    },
+    "latest_open_model": {
+     "value": "Qwen3.8-Max (2.4T params)",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465926099220/tm2623667d1_ex99-1.htm",
+     "date": "2026-08"
+    }
+   },
+   "slug": "alibaba-qwen",
+   "short": "Alibaba Qwen",
+   "emblem": {
+    "pattern": "stripes",
+    "c1": "#ff9f1c",
+    "c2": "#fff7e6",
+    "svg": "<svg class=\"emblem\" viewBox=\"0 0 64 64\" width=\"64\" height=\"64\" aria-hidden=\"true\"><defs><clipPath id=\"cl-x\"><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\"/></clipPath></defs><g clip-path=\"url(#cl-x)\"><rect width=\"64\" height=\"64\" fill=\"#ff9f1c\"/><rect x=\"16\" y=\"0\" width=\"6\" height=\"64\" fill=\"#fff7e6\"/><rect x=\"29\" y=\"0\" width=\"6\" height=\"64\" fill=\"#fff7e6\"/><rect x=\"42\" y=\"0\" width=\"6\" height=\"64\" fill=\"#fff7e6\"/></g><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\" fill=\"none\" stroke=\"#0d1526\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></svg>"
+   },
+   "scoring": {
+    "lanes": {
+     "money": 59.0,
+     "reach": 58.5,
+     "brains": 57.6,
+     "muscle": 0.0,
+     "momentum": 16.7,
+     "openness": 88.7
+    },
+    "detail": {
+     "money": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Valuation / market cap",
+        "score": 62.8,
+        "scale": "log"
+       },
+       {
+        "label": "Annualized revenue",
+        "score": 55.1,
+        "scale": "log"
+       }
+      ]
+     },
+     "reach": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Active users",
+        "score": 58.5,
+        "scale": "log"
+       },
+       {
+        "label": "Web traffic share",
+        "score": null,
+        "scale": "linear"
+       }
+      ]
+     },
+     "brains": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "AA Intelligence Index v5",
+        "score": 57.6,
+        "scale": "linear"
+       },
+       {
+        "label": "Text Arena rank",
+        "score": null,
+        "scale": "rank"
+       }
+      ]
+     },
+     "muscle": {
+      "disclosed": false,
+      "parts": [
+       {
+        "label": "Largest site, current MW",
+        "score": null,
+        "scale": "linear"
+       }
+      ]
+     },
+     "momentum": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Releases, last 6 months",
+        "score": 16.7,
+        "scale": "linear"
+       }
+      ]
+     },
+     "openness": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Open weights; latest dated Aug 2026",
+        "score": 88.7,
+        "scale": "rule"
+       }
+      ]
+     }
+    },
+    "inputs": {
+     "valuation": {
+      "value": 248670000000.0,
+      "from": "money.valuation_usd",
+      "how": "Alibaba market cap (parent company)"
+     },
+     "revenue": {
+      "value": 7296000000.0,
+      "from": "money.annualized_revenue_usd",
+      "how": "AI-related product revenue run rate"
+     },
+     "users": {
+      "value": 158170000.0,
+      "from": "reach.active_users",
+      "how": "158.17M MAU (QuestMobile)"
+     },
+     "webshare": {
+      "value": null,
+      "from": "reach.similarweb_web_share_pct",
+      "how": "Not in Similarweb top list"
+     },
+     "aa": {
+      "value": 34,
+      "from": "brains.aa_intelligence_index",
+      "how": null
+     },
+     "arena": {
+      "value": null,
+      "from": "brains.arena_text_rank",
+      "how": "Not found"
+     },
+     "mw": {
+      "value": null,
+      "from": "muscle.compute",
+      "how": "Capex reported, no MW figure"
+     },
+     "releases": {
+      "value": 1,
+      "from": "momentum.major_releases_last_6mo",
+      "how": "Lower bound"
+     }
+    }
+   },
+   "composite_default": 46.8,
+   "rank_default": 6
+  },
+  {
+   "id": "deepseek",
+   "name": "DeepSeek",
+   "founded": {
+    "value": 2023,
+    "source": "https://www.deepseek.com/",
+    "date": null,
+    "note": "Well-established fact; not fetched"
+   },
+   "hq": {
+    "value": "Hangzhou, China",
+    "source": "https://www.deepseek.com/",
+    "date": null,
+    "note": "Well-established fact"
+   },
+   "flagship_model": {
+    "value": "DeepSeek-V4-Pro (Aug 13 2026) / DeepSeek-V4.1-Flash (Sep 10 2026, current)",
+    "source": "https://presenc.ai/research/deepseek-model-lineage-2026",
+    "date": "2026-10-01",
+    "note": "V4.1-Pro announced, no date"
+   },
+   "total_funding_usd": {
+    "value": 7400000000.0,
+    "source": "https://officechai.com/ai/deepseek-raises-7-4-billion-at-50-billion-valuation-becomes-chinas-most-valuable-ai-startup/",
+    "date": "2026-06-19",
+    "note": "First external round (>50B yuan); previously self-funded by High-Flyer"
+   },
+   "money": {
+    "valuation_usd": {
+     "value": 50000000000.0,
+     "source": "https://officechai.com/ai/deepseek-raises-7-4-billion-at-50-billion-valuation-becomes-chinas-most-valuable-ai-startup/",
+     "date": "2026-06-19",
+     "note": "Post-money 'above $50B'. Unverified secondary claims of $74B exist (valueaddvc)."
+    },
+    "annualized_revenue_usd": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not disclosed"
+    },
+    "profit_loss": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not disclosed"
+    }
+   },
+   "reach": {
+    "active_users": {
+     "value": "122.65M MAU (Sept 2026, QuestMobile estimate, China)",
+     "source": "https://fourweekmba.com/ai-bytedances-doubao-hits-419m-users-daily-base-6x-qwens/",
+     "date": "2026-09",
+     "note": "Third-party estimate"
+    },
+    "app_mau_sensor_tower": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not reported; Sensor Tower notes DeepSeek users average 33 sessions/week"
+    },
+    "similarweb_web_share_pct": {
+     "value": 3.4,
+     "source": "https://officechai.com/ai/geminis-traffic-share-falls-for-fourth-straight-month-as-chatgpt-regains-ground-similarweb-data/",
+     "date": "2026-09",
+     "note": "Also: 16.3% of OpenRouter token volume (largest single provider) per officechai 2026-06-19"
+    }
+   },
+   "brains": {
+    "aa_intelligence_index": {
+     "value": {
+      "model": "DeepSeek V4.1 Flash (max)",
+      "score": 32
+     },
+     "source": "https://capitalandcompute.net/md/artificial-analysis-index-v5-which-models-dropped.md",
+     "date": "2026-11-04",
+     "note": "Artificial Analysis Intelligence Index v5 (launched ~Oct 28 2026; not comparable to v4.x scores). Secondary summary of AA data; artificialanalysis.ai not fetchable from this session."
+    },
+    "arena_text_rank": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Overall rank not found; V4.1 Flash #26 in Instruction Following category (Sept 10 snapshot) per https://www.stephanmiller.com/model-buzz-roundup-week-of-1028/"
+    }
+   },
+   "muscle": {
+    "compute": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "No public capacity figure; DeepSeek uses Huawei Ascend chips for V4 per press. Epoch lists DayOne Nusajaya (Malaysia, ~473 MW) with reported Chinese AI firm use, not attributed to DeepSeek."
+    }
+   },
+   "momentum": {
+    "growth": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "No revenue/user growth series found"
+    },
+    "major_releases_last_6mo": {
+     "value": 3,
+     "source": "https://presenc.ai/research/deepseek-model-lineage-2026",
+     "date": "2026-10-01",
+     "note": "V4-Flash official (Jul 31), V4-Pro (Aug 13), V4.1-Flash (Sep 10)"
+    }
+   },
+   "openness": {
+    "open_weights": {
+     "value": true,
+     "source": "https://presenc.ai/research/deepseek-model-lineage-2026",
+     "date": "2026-10-01"
+    },
+    "latest_open_model": {
+     "value": "DeepSeek-V4.1-Flash (MIT, Hugging Face)",
+     "source": "https://presenc.ai/research/deepseek-model-lineage-2026",
+     "date": "2026-09-10"
+    }
+   },
+   "slug": "deepseek",
+   "short": "DeepSeek",
+   "emblem": {
+    "pattern": "star",
+    "c1": "#2f47ff",
+    "c2": "#9be7ff",
+    "svg": "<svg class=\"emblem\" viewBox=\"0 0 64 64\" width=\"64\" height=\"64\" aria-hidden=\"true\"><defs><clipPath id=\"cl-x\"><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\"/></clipPath></defs><g clip-path=\"url(#cl-x)\"><rect width=\"64\" height=\"64\" fill=\"#2f47ff\"/><path d=\"M32 16 L36 28 L48 28 L38 36 L42 48 L32 41 L22 48 L26 36 L16 28 L28 28 Z\" fill=\"#9be7ff\"/></g><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\" fill=\"none\" stroke=\"#0d1526\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></svg>"
+   },
+   "scoring": {
+    "lanes": {
+     "money": 41.1,
+     "reach": 29.4,
+     "brains": 54.2,
+     "muscle": 0.0,
+     "momentum": 50.0,
+     "openness": 92.2
+    },
+    "detail": {
+     "money": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Valuation / market cap",
+        "score": 41.1,
+        "scale": "log"
+       },
+       {
+        "label": "Annualized revenue",
+        "score": null,
+        "scale": "log"
+       }
+      ]
+     },
+     "reach": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Active users",
+        "score": 52.8,
+        "scale": "log"
+       },
+       {
+        "label": "Web traffic share",
+        "score": 6.0,
+        "scale": "linear"
+       }
+      ]
+     },
+     "brains": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "AA Intelligence Index v5",
+        "score": 54.2,
+        "scale": "linear"
+       },
+       {
+        "label": "Text Arena rank",
+        "score": null,
+        "scale": "rank"
+       }
+      ]
+     },
+     "muscle": {
+      "disclosed": false,
+      "parts": [
+       {
+        "label": "Largest site, current MW",
+        "score": null,
+        "scale": "linear"
+       }
+      ]
+     },
+     "momentum": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Releases, last 6 months",
+        "score": 50.0,
+        "scale": "linear"
+       }
+      ]
+     },
+     "openness": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Open weights; latest dated Sep 10, 2026",
+        "score": 92.2,
+        "scale": "rule"
+       }
+      ]
+     }
+    },
+    "inputs": {
+     "valuation": {
+      "value": 50000000000.0,
+      "from": "money.valuation_usd",
+      "how": null
+     },
+     "revenue": {
+      "value": null,
+      "from": "money.annualized_revenue_usd",
+      "how": "Not disclosed"
+     },
+     "users": {
+      "value": 122650000.0,
+      "from": "reach.active_users",
+      "how": "122.65M MAU (QuestMobile, China)"
+     },
+     "webshare": {
+      "value": 3.4,
+      "from": "reach.similarweb_web_share_pct",
+      "how": null
+     },
+     "aa": {
+      "value": 32,
+      "from": "brains.aa_intelligence_index",
+      "how": null
+     },
+     "arena": {
+      "value": null,
+      "from": "brains.arena_text_rank",
+      "how": "Overall rank not found"
+     },
+     "mw": {
+      "value": null,
+      "from": "muscle.compute",
+      "how": "No public capacity figure"
+     },
+     "releases": {
+      "value": 3,
+      "from": "momentum.major_releases_last_6mo",
+      "how": null
+     }
+    }
+   },
+   "composite_default": 44.5,
+   "rank_default": 7
+  },
+  {
+   "id": "moonshot",
+   "name": "Moonshot AI (Kimi)",
+   "founded": {
+    "value": 2023,
+    "source": "https://www.moonshot.cn/",
+    "date": null,
+    "note": "Well-established fact; not fetched"
+   },
+   "hq": {
+    "value": "Beijing, China",
+    "source": "https://www.moonshot.cn/",
+    "date": null,
+    "note": "Well-established fact"
+   },
+   "flagship_model": {
+    "value": "Kimi K3.1 Pro (API Oct 23 2026)",
+    "source": "https://letsdatascience.com/news/moonshot-releases-kimi-k31-pro-api-open-weights-due-nov-4-786e160c",
+    "date": "2026-10-23"
+   },
+   "total_funding_usd": {
+    "value": null,
+    "source": null,
+    "date": null,
+    "note": "Not found as a cumulative figure; recent rounds include $2B at ~$20B (May 2026) and $3.5B at $35B"
+   },
+   "money": {
+    "valuation_usd": {
+     "value": 35000000000.0,
+     "source": "https://www.cxodigitalpulse.com/moonshot-ai-raises-3-5-billion-at-35-billion-valuation-after-kimi-k3-launch/",
+     "date": null,
+     "note": "Closed round after Kimi K3 launch; page not fetched (from search result title), date ~Q3 2026. Pursuing a $50B pre-IPO round; confidential HK IPO filing targeting Q1 2027 (https://aiweekly.co/alerts/moonshot-ai-tells-investors-arr-topped-1b-in-august-targets-2b-by-end-of-2026, 2026-09-11)."
+    },
+    "annualized_revenue_usd": {
+     "value": 1000000000.0,
+     "source": "https://aiweekly.co/alerts/moonshot-ai-tells-investors-arr-topped-1b-in-august-targets-2b-by-end-of-2026",
+     "date": "2026-08",
+     "note": "ARR >$1B in Aug 2026 (up from $300M in June) per Bloomberg report of investor communications; target $2B by end-2026"
+    },
+    "profit_loss": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not disclosed"
+    }
+   },
+   "reach": {
+    "active_users": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Kimi MAU not found in 2026 sources"
+    },
+    "app_mau_sensor_tower": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not reported"
+    },
+    "similarweb_web_share_pct": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not in Similarweb top list"
+    }
+   },
+   "brains": {
+    "aa_intelligence_index": {
+     "value": {
+      "model": "Kimi K3.1 Pro",
+      "score": 46
+     },
+     "source": "https://capitalandcompute.net/md/artificial-analysis-index-v5-which-models-dropped.md",
+     "date": "2026-11-04",
+     "note": "Artificial Analysis Intelligence Index v5 (launched ~Oct 28 2026; not comparable to v4.x scores). Secondary summary of AA data; artificialanalysis.ai not fetchable from this session. Version conflict: Kimi K3 scored 57 on pre-v5 index (July 17 2026, Artificial Analysis article)."
+    },
+    "arena_text_rank": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not found"
+    }
+   },
+   "muscle": {
+    "compute": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "No public figure found"
+    }
+   },
+   "momentum": {
+    "growth": {
+     "value": "ARR ~3.3x in two months ($300M June -> >$1B Aug 2026)",
+     "source": "https://aiweekly.co/alerts/moonshot-ai-tells-investors-arr-topped-1b-in-august-targets-2b-by-end-of-2026",
+     "date": "2026-09-11"
+    },
+    "major_releases_last_6mo": {
+     "value": 2,
+     "source": "https://artificialanalysis.ai/articles/four-frontier-launches-in-eight-days-six-labs-now-field-a-model-above-50-on-the-artificial-analysis-intelligence-index",
+     "date": "2026-07-17",
+     "note": "Kimi K3 (~July 2026) and Kimi K3.1 Pro (Oct 23)"
+    }
+   },
+   "openness": {
+    "open_weights": {
+     "value": true,
+     "source": "https://www.unite.ai/moonshot-opens-kimi-k3-weights-under-a-revenue-tiered-license/",
+     "date": null,
+     "note": "Kimi K3 weights under revenue-tiered license (title only, not fetched)"
+    },
+    "latest_open_model": {
+     "value": "Kimi K3.1 Pro (weights scheduled Nov 4 2026)",
+     "source": "https://letsdatascience.com/news/moonshot-releases-kimi-k31-pro-api-open-weights-due-nov-4-786e160c",
+     "date": "2026-10-23",
+     "note": "Actual Nov 4 weight release NOT verified; license not stated"
+    }
+   },
+   "slug": "moonshot",
+   "short": "Moonshot Kimi",
+   "emblem": {
+    "pattern": "spots",
+    "c1": "#2a1250",
+    "c2": "#c9a7ff",
+    "svg": "<svg class=\"emblem\" viewBox=\"0 0 64 64\" width=\"64\" height=\"64\" aria-hidden=\"true\"><defs><clipPath id=\"cl-x\"><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\"/></clipPath></defs><g clip-path=\"url(#cl-x)\"><rect width=\"64\" height=\"64\" fill=\"#2a1250\"/><circle cx=\"25\" cy=\"20\" r=\"4\" fill=\"#c9a7ff\"/><circle cx=\"39\" cy=\"20\" r=\"4\" fill=\"#c9a7ff\"/><circle cx=\"32\" cy=\"33\" r=\"4\" fill=\"#c9a7ff\"/><circle cx=\"25\" cy=\"46\" r=\"4\" fill=\"#c9a7ff\"/><circle cx=\"39\" cy=\"46\" r=\"4\" fill=\"#c9a7ff\"/></g><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\" fill=\"none\" stroke=\"#0d1526\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></svg>"
+   },
+   "scoring": {
+    "lanes": {
+     "money": 35.2,
+     "reach": 0.0,
+     "brains": 78.0,
+     "muscle": 0.0,
+     "momentum": 33.3,
+     "openness": 98.2
+    },
+    "detail": {
+     "money": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Valuation / market cap",
+        "score": 36.3,
+        "scale": "log"
+       },
+       {
+        "label": "Annualized revenue",
+        "score": 34.0,
+        "scale": "log"
+       }
+      ]
+     },
+     "reach": {
+      "disclosed": false,
+      "parts": [
+       {
+        "label": "Active users",
+        "score": null,
+        "scale": "log"
+       },
+       {
+        "label": "Web traffic share",
+        "score": null,
+        "scale": "linear"
+       }
+      ]
+     },
+     "brains": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "AA Intelligence Index v5",
+        "score": 78.0,
+        "scale": "linear"
+       },
+       {
+        "label": "Text Arena rank",
+        "score": null,
+        "scale": "rank"
+       }
+      ]
+     },
+     "muscle": {
+      "disclosed": false,
+      "parts": [
+       {
+        "label": "Largest site, current MW",
+        "score": null,
+        "scale": "linear"
+       }
+      ]
+     },
+     "momentum": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Releases, last 6 months",
+        "score": 33.3,
+        "scale": "linear"
+       }
+      ]
+     },
+     "openness": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Open weights; latest dated Oct 23, 2026",
+        "score": 98.2,
+        "scale": "rule"
+       }
+      ]
+     }
+    },
+    "inputs": {
+     "valuation": {
+      "value": 35000000000.0,
+      "from": "money.valuation_usd",
+      "how": null
+     },
+     "revenue": {
+      "value": 1000000000.0,
+      "from": "money.annualized_revenue_usd",
+      "how": null
+     },
+     "users": {
+      "value": null,
+      "from": "reach.active_users",
+      "how": "Kimi MAU not found"
+     },
+     "webshare": {
+      "value": null,
+      "from": "reach.similarweb_web_share_pct",
+      "how": "Not in Similarweb top list"
+     },
+     "aa": {
+      "value": 46,
+      "from": "brains.aa_intelligence_index",
+      "how": null
+     },
+     "arena": {
+      "value": null,
+      "from": "brains.arena_text_rank",
+      "how": "Not found"
+     },
+     "mw": {
+      "value": null,
+      "from": "muscle.compute",
+      "how": "No public figure"
+     },
+     "releases": {
+      "value": 2,
+      "from": "momentum.major_releases_last_6mo",
+      "how": null
+     }
+    }
+   },
+   "composite_default": 40.8,
+   "rank_default": 8
+  },
+  {
+   "id": "mistral",
+   "name": "Mistral AI",
+   "founded": {
+    "value": 2023,
+    "source": "https://mistral.ai/about",
+    "date": null,
+    "note": "Well-established fact; not fetched"
+   },
+   "hq": {
+    "value": "Paris, France",
+    "source": "https://mistral.ai/about",
+    "date": null,
+    "note": "Well-established fact"
+   },
+   "flagship_model": {
+    "value": "Mistral Large 4 (1T total / 49B active; weights Oct 29 2026)",
+    "source": "https://letsdatascience.com/blog/mistral-large-4-weights-out-resellers-need-license",
+    "date": "2026-10-30"
+   },
+   "total_funding_usd": {
+    "value": "~EUR 5.8B equity (EUR ~2.8B through Series C + EUR 3B Series D) plus $830M debt",
+    "source": "https://oracore.dev/en/news/mistral-20b-valuation-compute-bet-en",
+    "date": null,
+    "note": "Computed from oracore (undated) + Orrick Series D. CONFLICT: Sacra lists a June 2026 '$3.5B at $20B' raise - likely the same Series D in USD."
+   },
+   "money": {
+    "valuation_usd": {
+     "value": "EUR 21B+ post-money (~$24B)",
+     "source": "https://www.orrick.com/en/News/2026/09/Orrick-Advises-Mistral-in-its-3B-Series-D-at-21B-Post-Money-Valuation",
+     "date": "2026-09-08",
+     "note": "Series D EUR 3B led by Samsung Electronics. Linked WSJ URL references 'exceeds 24 billion' (likely USD)."
+    },
+    "annualized_revenue_usd": {
+     "value": 400000000.0,
+     "source": "https://sacra.com/research/mistral",
+     "date": "2026-01",
+     "note": "Sacra estimate; company targeted >EUR/$1B revenue for 2026. Stale."
+    },
+    "profit_loss": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not disclosed"
+    }
+   },
+   "reach": {
+    "active_users": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Le Chat user count not disclosed in sources found"
+    },
+    "app_mau_sensor_tower": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not reported"
+    },
+    "similarweb_web_share_pct": {
+     "value": null,
+     "source": null,
+     "date": null,
+     "note": "Not in Similarweb top list"
+    }
+   },
+   "brains": {
+    "aa_intelligence_index": {
+     "value": {
+      "model": "Mistral Large 4",
+      "score": 25
+     },
+     "source": "https://capitalandcompute.net/md/artificial-analysis-index-v5-which-models-dropped.md",
+     "date": "2026-11-04",
+     "note": "Artificial Analysis Intelligence Index v5 (launched ~Oct 28 2026; not comparable to v4.x scores). Secondary summary of AA data; artificialanalysis.ai not fetchable from this session."
+    },
+    "arena_text_rank": {
+     "value": {
+      "rank": 113,
+      "model": "Mistral Large 4"
+     },
+     "source": "https://www.stephanmiller.com/model-buzz-roundup-week-of-1028/",
+     "date": "2026-11-03"
+    }
+   },
+   "muscle": {
+    "compute": {
+     "value": "Targets 200 MW by 2027 and 1 GW by 2030; $830M debt for ~13,800 Nvidia GPUs near Paris; EUR 1.2B Sweden site (~23 MW by 2027)",
+     "source": "https://oracore.dev/en/news/mistral-20b-valuation-compute-bet-en",
+     "date": null,
+     "note": "Undated; GPU/Sweden detail from https://sacra.com/research/mistral"
+    }
+   },
+   "momentum": {
+    "growth": {
+     "value": "1,850% revenue growth in 2025 (~$16M -> ~$312M ARR)",
+     "source": "https://sacra.com/research/mistral",
+     "date": "2026-01",
+     "note": "Sacra estimate"
+    },
+    "major_releases_last_6mo": {
+     "value": 1,
+     "source": "https://letsdatascience.com/blog/mistral-large-4-weights-out-resellers-need-license",
+     "date": "2026-10-30",
+     "note": "Lower bound: Mistral Large 4 (preview, then weights Oct 29). Others not verified."
+    }
+   },
+   "openness": {
+    "open_weights": {
+     "value": true,
+     "source": "https://letsdatascience.com/blog/mistral-large-4-weights-out-resellers-need-license",
+     "date": "2026-10-29"
+    },
+    "latest_open_model": {
+     "value": "Mistral Large 4 (Mistral Ecosystem Open-Weight License, modified MIT; MaaS resellers need commercial license)",
+     "source": "https://letsdatascience.com/blog/mistral-large-4-weights-out-resellers-need-license",
+     "date": "2026-10-29"
+    }
+   },
+   "slug": "mistral",
+   "short": "Mistral",
+   "emblem": {
+    "pattern": "cross",
+    "c1": "#ffd400",
+    "c2": "#ff3d00",
+    "svg": "<svg class=\"emblem\" viewBox=\"0 0 64 64\" width=\"64\" height=\"64\" aria-hidden=\"true\"><defs><clipPath id=\"cl-x\"><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\"/></clipPath></defs><g clip-path=\"url(#cl-x)\"><rect width=\"64\" height=\"64\" fill=\"#ffd400\"/><path d=\"M10 0 L20 0 L60 64 L50 64 Z M44 0 L54 0 L14 64 L4 64 Z\" fill=\"#ff3d00\"/></g><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\" fill=\"none\" stroke=\"#0d1526\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></svg>"
+   },
+   "scoring": {
+    "lanes": {
+     "money": 27.8,
+     "reach": 0.0,
+     "brains": 26.6,
+     "muscle": 0.0,
+     "momentum": 16.7,
+     "openness": 99.0
+    },
+    "detail": {
+     "money": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Valuation / market cap",
+        "score": 31.2,
+        "scale": "log"
+       },
+       {
+        "label": "Annualized revenue",
+        "score": 24.4,
+        "scale": "log"
+       }
+      ]
+     },
+     "reach": {
+      "disclosed": false,
+      "parts": [
+       {
+        "label": "Active users",
+        "score": null,
+        "scale": "log"
+       },
+       {
+        "label": "Web traffic share",
+        "score": null,
+        "scale": "linear"
+       }
+      ]
+     },
+     "brains": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "AA Intelligence Index v5",
+        "score": 42.4,
+        "scale": "linear"
+       },
+       {
+        "label": "Text Arena rank",
+        "score": 10.8,
+        "scale": "rank"
+       }
+      ]
+     },
+     "muscle": {
+      "disclosed": false,
+      "parts": [
+       {
+        "label": "Largest site, current MW",
+        "score": null,
+        "scale": "linear"
+       }
+      ]
+     },
+     "momentum": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Releases, last 6 months",
+        "score": 16.7,
+        "scale": "linear"
+       }
+      ]
+     },
+     "openness": {
+      "disclosed": true,
+      "parts": [
+       {
+        "label": "Open weights; latest dated Oct 29, 2026",
+        "score": 99.0,
+        "scale": "rule"
+       }
+      ]
+     }
+    },
+    "inputs": {
+     "valuation": {
+      "value": 24000000000.0,
+      "from": "money.valuation_usd",
+      "how": "EUR 21B+ post-money, ~$24B as stated in the source field"
+     },
+     "revenue": {
+      "value": 400000000.0,
+      "from": "money.annualized_revenue_usd",
+      "how": "Sacra estimate, Jan 2026 (stale)"
+     },
+     "users": {
+      "value": null,
+      "from": "reach.active_users",
+      "how": "Le Chat users not disclosed"
+     },
+     "webshare": {
+      "value": null,
+      "from": "reach.similarweb_web_share_pct",
+      "how": "Not in Similarweb top list"
+     },
+     "aa": {
+      "value": 25,
+      "from": "brains.aa_intelligence_index",
+      "how": null
+     },
+     "arena": {
+      "value": 113,
+      "from": "brains.arena_text_rank",
+      "how": null
+     },
+     "mw": {
+      "value": null,
+      "from": "muscle.compute",
+      "how": "Targets only (200 MW by 2027); no current figure"
+     },
+     "releases": {
+      "value": 1,
+      "from": "momentum.major_releases_last_6mo",
+      "how": "Lower bound"
+     }
+    }
+   },
+   "composite_default": 28.3,
+   "rank_default": 9
+  }
+ ],
+ "exhibition": [
+  {
+   "id": "big-ai-brain",
+   "slug": "big-ai-brain",
+   "short": "Big AI Brain",
+   "name": "Big AI Brain",
+   "exhibition": true,
+   "url": "https://bigaibrain.com",
+   "emblem": {
+    "pattern": "halves",
+    "c1": "#ff3df2",
+    "c2": "#39ff14",
+    "svg": "<svg class=\"emblem\" viewBox=\"0 0 64 64\" width=\"64\" height=\"64\" aria-hidden=\"true\"><defs><clipPath id=\"cl-x\"><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\"/></clipPath></defs><g clip-path=\"url(#cl-x)\"><rect width=\"64\" height=\"64\" fill=\"#ff3df2\"/><rect x=\"32\" y=\"0\" width=\"32\" height=\"64\" fill=\"#39ff14\"/></g><path d=\"M22 6 L27 4 Q32 9 37 4 L42 6 L58 17 L51 29 L45 25 L45 58 L19 58 L19 25 L13 29 L6 17 Z\" fill=\"none\" stroke=\"#0d1526\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/></svg>"
+   },
+   "summary": "A from-scratch, crowd-fed AI with no outside LLM. It grows as people feed it.",
+   "note": "Exhibition lane only. Not scored or ranked against the labs."
+  }
+ ]
+}

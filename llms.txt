@@ -1,0 +1,26 @@
+# Great AI Race
+
+> An independent, sourced leaderboard that ranks nine AI labs as racers on a neon track. Six lanes (Money, Reach, Brains, Muscle, Momentum, Openness) are each normalized 0–100 across the labs and averaged into a composite. Data as of Nov 6, 2026. Not affiliated with any lab. Not investment advice.
+
+## Standings (equal weights)
+1. OpenAI — composite 81.1 (https://www.greatairace.com/racers/openai/)
+2. Google DeepMind — composite 74.1 (https://www.greatairace.com/racers/google-deepmind/)
+3. Meta — composite 65.7 (https://www.greatairace.com/racers/meta/)
+4. Anthropic — composite 64.2 (https://www.greatairace.com/racers/anthropic/)
+5. xAI — composite 57.1 (https://www.greatairace.com/racers/xai/)
+6. Alibaba Qwen — composite 46.8 (https://www.greatairace.com/racers/alibaba-qwen/)
+7. DeepSeek — composite 44.5 (https://www.greatairace.com/racers/deepseek/)
+8. Moonshot Kimi — composite 40.8 (https://www.greatairace.com/racers/moonshot/)
+9. Mistral — composite 28.3 (https://www.greatairace.com/racers/mistral/)
+Exhibition (not ranked): Big AI Brain — a from-scratch, crowd-fed AI with no outside LLM (https://www.greatairace.com/racers/big-ai-brain/)
+
+## Key pages
+- [Race track and metrics key](https://www.greatairace.com/): live standings, weight sliders, FAQ
+- [All racers](https://www.greatairace.com/racers/): one fact card per lab, every figure with source and date
+- [Methodology](https://www.greatairace.com/methodology/): formulas, missing-data rule, source conflicts
+- [About](https://www.greatairace.com/about/)
+- [Race data JSON](https://www.greatairace.com/data/race.json): machine-readable values, sources, dates and lane scores
+
+## Notes
+- Brains uses Artificial Analysis Intelligence Index v5 (launched ~Oct 28 2026); v5 scores are not comparable to older versions.
+- Values a lab has not published are shown as "Not disclosed" and never estimated.

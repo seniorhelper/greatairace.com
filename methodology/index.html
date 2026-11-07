@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-US" data-skin="tron">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology: How AI Labs Are Scored | Great AI Race</title>
+<meta name="description" content="The Great AI Race formula: six lanes normalized 0–100, a weighted composite, Artificial Analysis Index v5 notes, missing-data rules and every source conflict we flag.">
+<link rel="canonical" href="https://www.greatairace.com/methodology/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Great AI Race">
+<meta property="og:title" content="Methodology: How AI Labs Are Scored | Great AI Race"><meta property="og:description" content="The Great AI Race formula: six lanes normalized 0–100, a weighted composite, Artificial Analysis Index v5 notes, missing-data rules and every source conflict we flag.">
+<meta property="og:url" content="https://www.greatairace.com/methodology/"><meta property="og:image" content="https://www.greatairace.com/assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#00e5ff">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>try{var s=localStorage.getItem('gar-skin');if(s)document.documentElement.setAttribute('data-skin',s)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.greatairace.com/#org", "name": "Great AI Race", "url": "https://www.greatairace.com/", "logo": "https://www.greatairace.com/favicon.svg"}, {"@type": "WebSite", "@id": "https://www.greatairace.com/#website", "name": "Great AI Race", "url": "https://www.greatairace.com/", "publisher": {"@id": "https://www.greatairace.com/#org"}, "inLanguage": "en-US"}, {"@type": "Dataset", "@id": "https://www.greatairace.com/#dataset", "name": "Great AI Race standings data", "description": "Sourced metrics for nine AI labs across six lanes (Money, Reach, Brains, Muscle, Momentum, Openness), with normalized lane scores and a composite.", "url": "https://www.greatairace.com/methodology/", "creator": {"@id": "https://www.greatairace.com/#org"}, "dateModified": "2026-11-06", "isAccessibleForFree": true, "keywords": ["AI labs", "AI race", "AI leaderboard", "Artificial Analysis", "Epoch AI"], "variableMeasured": ["Money", "Reach", "Brains", "Muscle", "Momentum", "Openness"], "distribution": {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://www.greatairace.com/data/race.json"}}, {"@type": "WebPage", "@id": "https://www.greatairace.com/methodology/#webpage", "url": "https://www.greatairace.com/methodology/", "name": "Methodology", "isPartOf": {"@id": "https://www.greatairace.com/#website"}, "dateModified": "2026-11-06"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.greatairace.com/"}, {"@type": "ListItem", "position": 2, "name": "Methodology", "item": "https://www.greatairace.com/methodology/"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+ <div class="wrap head-row">
+  <a class="brand" href="/" aria-label="Great AI Race home"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><ellipse cx="16" cy="16" rx="13" ry="9" fill="none" stroke="var(--neon)" stroke-width="3"/><path d="M16 4v6" stroke="var(--neon2)" stroke-width="3"/></svg><span>GREAT<b>AI</b>RACE</span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span><span class="sr">Menu</span></button>
+  <nav id="site-nav" class="site-nav" aria-label="Main">
+   <ul><li><a href="/">Race</a></li><li><a href="/racers/">Racers</a></li><li><a href="/methodology/" aria-current="page">Methodology</a></li><li><a href="/about/">About</a></li></ul>
+   <div class="skins" role="group" aria-label="Color skin">
+    <button type="button" data-skin-btn="tron" title="Tron blue"><i style="background:#00e5ff"></i>Tron</button>
+    <button type="button" data-skin-btn="synth" title="Synthwave pink"><i style="background:#ff3df2"></i>Synth</button>
+    <button type="button" data-skin-btn="gold" title="Gold"><i style="background:#ffc400"></i>Gold</button>
+    <button type="button" data-skin-btn="light" title="Light"><i style="background:#ffffff"></i>Light</button>
+   </div>
+  </nav>
+ </div>
+</header>
+<main id="main">
+<div class="wrap narrow">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <span aria-current="page">Methodology</span></nav>
+<h1 class="page-h">How the Great AI Race is scored</h1>
+<p class="lede-dark">Six lanes, each scored 0–100 against the nine labs, averaged into one composite. Here is every rule.</p>
+
+<div class="callout"><b>Index change:</b> Artificial Analysis switched to Intelligence Index v5 around Oct 28, 2026. v5 scores are not comparable to v4.x or earlier scores, so this race uses v5 only and never mixes versions.</div>
+
+<h2>The six lanes</h2>
+<div class="table-wrap"><table class="scores"><thead><tr><th scope="col">Lane</th><th scope="col">What it measures</th></tr></thead><tbody><tr><th scope="row">Money</th><td>Valuation or market cap, plus annualized revenue run rate</td></tr><tr><th scope="row">Reach</th><td>Reported active users, plus share of worldwide gen-AI web traffic</td></tr><tr><th scope="row">Brains</th><td>Artificial Analysis Intelligence Index v5, plus Text Arena rank</td></tr><tr><th scope="row">Muscle</th><td>Largest single AI data center by current IT power (Epoch AI estimates)</td></tr><tr><th scope="row">Momentum</th><td>Major model releases in the last six months</td></tr><tr><th scope="row">Openness</th><td>Open-weight releases and how recent the latest one is</td></tr></tbody></table></div>
+
+<h2>Normalizing each input</h2>
+<ul class="rules">
+ <li><b>Linear inputs</b> (AI index score, web traffic share, data center MW, release count): <code>score = 100 × value ÷ best value among the nine labs</code>.</li>
+ <li><b>Wide-range inputs</b> (valuation, revenue, users) use a log scale so a $3.9T company does not flatten everyone else: <code>score = 100 × (log10 v − log10(min ÷ 10)) ÷ (log10 max − log10(min ÷ 10))</code>.</li>
+ <li><b>Text Arena rank</b>: <code>score = 100 × (1 − log10(rank) ÷ log10(200))</code>, so #1 = 100, #3 ≈ 79, #113 ≈ 11. If a lab's overall rank is not published, Brains uses the AI index alone.</li>
+ <li><b>Openness</b>: 0 with no open-weight model. With open weights, 50 points plus up to 50 more for recency: <code>50 × (1 − months since latest open release ÷ 12)</code>, floored at 0. If the release date is not verified, the lab gets the 50 base points only.</li>
+ <li><b>Lane score</b> = average of that lane's available inputs. If none of a lane's inputs are disclosed, the lane scores 0 and shows "ND". That penalizes labs that publish less, and we say so on every card.</li>
+</ul>
+
+<h2>The composite formula</h2>
+<p class="formula"><code>Composite = (w₁·Money + w₂·Reach + w₃·Brains + w₄·Muscle + w₅·Momentum + w₆·Openness) ÷ (w₁ + … + w₆)</code></p>
+<p>Default weights are all equal (1). On the home page you can set each weight from 0 to 5 and the track re-ranks live. Your weights stay in your browser.</p>
+
+<h2>Known limits</h2>
+<ul class="rules">
+ <li><b>Parent companies.</b> Alphabet, Meta, Alibaba and SpaceX report company-wide valuation and revenue. AI is not broken out, so these labs score higher in Money than an AI-only figure would give them. The xAI valuation is SpaceX's total market cap.</li>
+ <li><b>Muscle</b> uses the largest single data center by current IT power from Epoch AI. It undercounts distributed fleets (Google's TPUs) and does not count contracted future capacity.</li>
+ <li><b>Momentum</b> counts major releases. Several counts are lower bounds. Growth figures are shown on fact cards but not scored, because labs report growth in different ways.</li>
+ <li><b>Sources.</b> Some figures come from secondary reports of primary data (for example, summaries of Artificial Analysis data). Each fact card says so in its note.</li>
+</ul>
+
+<h2>Source conflicts we flag</h2>
+<ul class="rules conflicts"><li><b>Gemini users.</b> Google reports 1 billion+ Gemini monthly active users (app + web, Oct 28 2026). Sensor Tower estimates 591M mobile-app MAU (Q3 2026). Different scope; we score Google&#x27;s own figure and show both. <a href="https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/" rel="nofollow noopener" target="_blank">blog.google</a></li><li><b>OpenAI valuation.</b> $852B is the last confirmed primary round (Mar 2026). StockAnalysis shows a $993.7B implied secondary-market valuation (Oct 29 2026). We score the primary round. <a href="https://stockanalysis.com/private/openai/valuation/" rel="nofollow noopener" target="_blank">stockanalysis.com</a></li><li><b>OpenAI revenue.</b> ~$50B run rate in Sept 2026 per FT/Reuters, about $20B below earlier company signals. <a href="https://sacra.com/c/openai/" rel="nofollow noopener" target="_blank">sacra.com</a></li><li><b>OpenAI Abilene power.</b> Epoch AI lists Stargate Abilene at 824 MW current IT power; OfficeChai (Nov 1 2026, citing Epoch) lists ~421 MW. <a href="https://officechai.com/ai/these-are-the-10-biggest-datacenters-in-the-world-oct-2026/" rel="nofollow noopener" target="_blank">officechai.com</a></li><li><b>Anthropic revenue.</b> $65B run rate (Axios, Aug 2026). The S-1/A shows Q3 2026 revenue of $16.956B (about $67.8B annualized). Unverified reports claim more than $80B. <a href="https://www.indmoney.com/blog/us-stocks/anthropic-ipo-s1-filing-explained" rel="nofollow noopener" target="_blank">indmoney.com</a></li><li><b>xAI valuation.</b> The $2.0T figure is SpaceX&#x27;s total market cap, not xAI alone. Share-price sources also disagree ($146.90 vs $134.97). <a href="https://stockanalysis.com/list/biggest-companies" rel="nofollow noopener" target="_blank">stockanalysis.com</a></li><li><b>Qwen users.</b> QuestMobile: 158.17M MAU (Sept 2026). Alibaba&#x27;s annual report: 295M MAU across all platforms (Mar 2026). Different scope and method. <a href="https://www.sec.gov/Archives/edgar/data/0001577552/000119312526274928/d133513dex991.pdf" rel="nofollow noopener" target="_blank">sec.gov</a></li><li><b>DeepSeek valuation.</b> Above $50B after its first outside round (Jun 2026). Unverified secondary claims of $74B exist. <a href="https://officechai.com/ai/deepseek-raises-7-4-billion-at-50-billion-valuation-becomes-chinas-most-valuable-ai-startup/" rel="nofollow noopener" target="_blank">officechai.com</a></li><li><b>Mistral funding.</b> Sacra lists a June 2026 &quot;$3.5B at $20B&quot; raise that is likely the same EUR 3B Series D reported by Orrick. <a href="https://www.orrick.com/en/News/2026/09/Orrick-Advises-Mistral-in-its-3B-Series-D-at-21B-Post-Money-Valuation" rel="nofollow noopener" target="_blank">orrick.com</a></li><li><b>Index versions.</b> Grok 4.5 scored 54 and Kimi K3 scored 57 on the pre-v5 Artificial Analysis index. Those scores are not comparable to v5 and are not used. <a href="https://artificialanalysis.ai/articles/four-frontier-launches-in-eight-days-six-labs-now-field-a-model-above-50-on-the-artificial-analysis-intelligence-index" rel="nofollow noopener" target="_blank">artificialanalysis.ai</a></li></ul>
+
+<h2>Updates</h2>
+<p>All pages are built from one file, <a href="/data/race.json">/data/race.json</a>, designed to be refreshed by a nightly script. Feeds planned: Artificial Analysis Data API, Epoch AI data center data, OpenRouter rankings, the Text Arena dataset, the Hugging Face Hub API and SEC EDGAR. Similarweb, Sensor Tower and QuestMobile figures come from press coverage and are updated by hand. If a fetch fails, the last good value stays.</p>
+
+<h2>Independence</h2>
+<p>Great AI Race is independent. It is not affiliated with, endorsed by or sponsored by any lab shown. <b>Not investment advice.</b></p>
+</div>
+</main>
+<footer class="site-foot">
+ <div class="wrap foot-grid">
+  <div><p class="foot-brand">GREAT<b>AI</b>RACE</p><p>An independent scoreboard of the AI labs, built in Denver, Colorado. Not affiliated with, endorsed by or sponsored by any lab shown. Lab names identify the labs only; racer emblems are original designs. <strong>Not investment advice.</strong></p></div>
+  <div><p class="foot-h">Pages</p><ul><li><a href="/">Race</a></li><li><a href="/racers/">Racers</a></li><li><a href="/methodology/">Methodology</a></li><li><a href="/about/">About</a></li><li><a href="/data/race.json">Race data (JSON)</a></li></ul></div>
+  <div><p class="foot-h">Data credits</p><p>Brains lane: <a href="https://artificialanalysis.ai/" rel="noopener" target="_blank">Artificial Analysis</a> Intelligence Index v5 and Text Arena. Muscle lane: <a href="https://epoch.ai/data/data_centers" rel="noopener" target="_blank">Epoch AI</a> (CC BY 4.0). Every other figure links to its source on the fact cards. Data as of Nov 6, 2026.</p></div>
+ </div>
+ <div class="heart-row"><span class="heart" aria-hidden="true">&#10084;</span><a href="https://eyetoad.com" rel="noopener">Need a website?</a></div>
+</footer>
+<script src="/assets/app.js" defer></script>
+</body>
+</html>
