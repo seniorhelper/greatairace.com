@@ -102,10 +102,20 @@ html[data-skin="light"] .hero h1{text-shadow:none}
 .track-box{position:relative;border:1px solid var(--grid);background:#000;border-radius:4px;overflow:hidden}
 html[data-skin="light"] .track-box{background:#f8fbff}
 #track-svg{display:block;width:100%;height:auto}
-.replay{position:absolute;right:8px;bottom:8px;min-height:36px;font-size:.8rem;background:rgba(0,0,0,.55);color:#fff}
+.replay{position:absolute;right:8px;top:8px;min-height:36px;font-size:.8rem;background:rgba(0,0,0,.55);color:#fff}
 html[data-skin="light"] .replay{background:#fff;color:var(--ink)}
 .racer{cursor:pointer}
 .racer:focus{outline:none}
+.racer .inner{transform-box:fill-box;transform-origin:center}
+.racer.wiggle .inner{animation:garWiggle .75s ease-in-out}
+.racer.glow .inner{filter:drop-shadow(0 0 7px #ff3df2) drop-shadow(0 0 16px #ff3df2)}
+.racer.glow .ring{stroke:#ff3df2;stroke-width:4}
+@keyframes garWiggle{0%,100%{transform:rotate(0) scale(1)}15%{transform:rotate(-16deg) scale(1.25)}30%{transform:rotate(14deg) scale(1.25)}45%{transform:rotate(-11deg) scale(1.2)}60%{transform:rotate(9deg) scale(1.15)}80%{transform:rotate(-4deg) scale(1.05)}}
+#track-svg .wave{animation:garWave 1.6s linear infinite}
+#track-svg .wave.w2{animation-duration:2.4s;animation-direction:reverse}
+#track-svg .drop{transform-box:fill-box;transform-origin:center;animation:garDrop 1.8s ease-out infinite}
+@keyframes garWave{to{stroke-dashoffset:-64}}
+@keyframes garDrop{0%{transform:scale(.4);opacity:.9}100%{transform:scale(2.4);opacity:0}}
 .racer:focus-visible .ring{stroke:#fff;stroke-width:4}
 .weights{border:1px solid var(--grid);padding:14px;border-radius:4px;background:var(--deep2)}
 .weights h3{font-family:var(--display);font-size:1rem}
