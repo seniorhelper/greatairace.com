@@ -1,26 +1,39 @@
 # Great AI Race
 
-> An independent, sourced leaderboard that ranks nine AI labs as racers on a neon track. Six lanes (Money, Reach, Brains, Muscle, Momentum, Openness) are each normalized 0–100 across the labs and averaged into a composite. Data as of Nov 6, 2026. Not affiliated with any lab. Not investment advice.
+> An independent, sourced leaderboard that ranks nine AI labs as racers on a tall neon race track. Six lanes (Money, Reach, Brains, Muscle, Momentum, Openness) are each normalized 0–100 across the labs and averaged into a composite. Data as of Nov 17, 2026; daily update target. Not affiliated with any lab. Not investment advice and not a betting product.
 
-## Standings (equal weights)
-1. OpenAI — composite 81.1 (https://www.greatairace.com/racers/openai/)
-2. Google DeepMind — composite 74.1 (https://www.greatairace.com/racers/google-deepmind/)
+## Standings (equal weights, as of Nov 17, 2026)
+1. OpenAI — composite 80.5 (https://www.greatairace.com/racers/openai/)
+2. Google DeepMind — composite 73.9 (https://www.greatairace.com/racers/google-deepmind/)
 3. Meta — composite 65.7 (https://www.greatairace.com/racers/meta/)
-4. Anthropic — composite 64.2 (https://www.greatairace.com/racers/anthropic/)
-5. xAI — composite 57.1 (https://www.greatairace.com/racers/xai/)
-6. Alibaba Qwen — composite 46.8 (https://www.greatairace.com/racers/alibaba-qwen/)
-7. DeepSeek — composite 44.5 (https://www.greatairace.com/racers/deepseek/)
-8. Moonshot Kimi — composite 40.8 (https://www.greatairace.com/racers/moonshot/)
-9. Mistral — composite 28.3 (https://www.greatairace.com/racers/mistral/)
-Exhibition (not ranked): Big AI Brain — a from-scratch, crowd-fed AI with no outside LLM (https://www.greatairace.com/racers/big-ai-brain/)
+4. Anthropic — composite 65.2 (https://www.greatairace.com/racers/anthropic/)
+5. xAI — composite 55.3 (https://www.greatairace.com/racers/xai/)
+6. Alibaba Qwen — composite 47.6 (https://www.greatairace.com/racers/alibaba-qwen/)
+7. DeepSeek — composite 42.3 (https://www.greatairace.com/racers/deepseek/)
+8. Moonshot Kimi — composite 38.8 (https://www.greatairace.com/racers/moonshot/)
+9. Mistral — composite 27.4 (https://www.greatairace.com/racers/mistral/)
+Exhibition (not ranked, dead last for now): Big AI Brain — a from-scratch, crowd-fed AI with no outside LLM (https://www.greatairace.com/racers/big-ai-brain/)
+
+## Data for agents
+- [Race data JSON](https://www.greatairace.com/data/race.json): every value with its source URL, as-of date and note; normalized lane scores; composite and rank. `value: null` means not disclosed (never estimated). Check `meta.as_of` for freshness.
+- [Data documentation](https://www.greatairace.com/data/): field guide for race.json
+- Update cadence: daily target. A figure that cannot be re-verified keeps its last good value and date, with a note.
+- Reuse: allowed with credit "Great AI Race (greatairace.com)" and a link.
 
 ## Key pages
 - [Race track and metrics key](https://www.greatairace.com/): live standings, weight sliders, FAQ
-- [All racers](https://www.greatairace.com/racers/): one fact card per lab, every figure with source and date
+- [All racers](https://www.greatairace.com/racers/): one fact card per lab
 - [Methodology](https://www.greatairace.com/methodology/): formulas, missing-data rule, source conflicts
-- [About](https://www.greatairace.com/about/)
-- [Race data JSON](https://www.greatairace.com/data/race.json): machine-readable values, sources, dates and lane scores
+- [Blog](https://www.greatairace.com/blog/): sourced analysis
+- [About](https://www.greatairace.com/about/) · [Contact](https://www.greatairace.com/contact/) · [Privacy](https://www.greatairace.com/privacy/) · [Terms](https://www.greatairace.com/terms/)
+
+## Articles
+- [Who is winning the AI race in 2026?](https://www.greatairace.com/blog/who-is-winning-the-ai-race-2026/): OpenAI leads the composite, but the lead depends on what you count. A lane-by-lane look at the nine labs, with every number sourced.
+- [OpenAI vs Google DeepMind vs Anthropic: how they compare](https://www.greatairace.com/blog/openai-vs-google-deepmind-vs-anthropic/): Three frontier labs, six lanes, one table. Where each leads, where each trails, and why the answer depends on what you value.
+- [The biggest AI labs by valuation in November 2026](https://www.greatairace.com/blog/biggest-ai-labs-by-valuation/): From Alphabet's trillions to Mistral's billions: valuations and market caps for the nine racers, with dates and caveats.
+- [Open-weight vs closed AI models, explained](https://www.greatairace.com/blog/open-weight-vs-closed-ai-models/): What "open weights" really means, how licenses differ, and which of the nine racers release models anyone can download.
 
 ## Notes
-- Brains uses Artificial Analysis Intelligence Index v5 (launched ~Oct 28 2026); v5 scores are not comparable to older versions.
-- Values a lab has not published are shown as "Not disclosed" and never estimated.
+- Brains uses Artificial Analysis Intelligence Index v5 (launched ~Oct 28 2026; v5.0.1 revision noted Nov 9 2026); v5 scores are not comparable to older versions.
+- Money uses parent-company market caps for Google DeepMind (Alphabet), Meta, Alibaba Qwen and xAI (SpaceX); AI is not broken out.
+- Related: AI hackathons ranked by prize per entrant at https://hackathontracker.com/

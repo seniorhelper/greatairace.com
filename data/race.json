@@ -1,8 +1,8 @@
 {
  "meta": {
-  "as_of": "2026-11-06",
+  "as_of": "2026-11-17",
   "site": "https://www.greatairace.com",
-  "version": "1.0",
+  "version": "1.1",
   "lanes": [
    {
     "key": "money",
@@ -43,7 +43,7 @@
    "momentum": 1,
    "openness": 1
   },
-  "index_note": "Artificial Analysis moved to Intelligence Index v5 around Oct 28 2026. v5 scores are not comparable to v4.x scores.",
+  "index_note": "Artificial Analysis moved to Intelligence Index v5 around Oct 28 2026 (v5.0.1 revision noted Nov 9 2026). v5 scores are not comparable to v4.x scores.",
   "conflicts": [
    {
     "topic": "Gemini users",
@@ -52,8 +52,8 @@
    },
    {
     "topic": "OpenAI valuation",
-    "text": "$852B is the last confirmed primary round (Mar 2026). StockAnalysis shows a $993.7B implied secondary-market valuation (Oct 29 2026). We score the primary round.",
-    "source": "https://stockanalysis.com/private/openai/valuation/"
+    "text": "$1.25T is a Bloomberg-reported round (Nov 6 2026, about $11B wired so far), not confirmed by OpenAI. The last confirmed primary round was $852B (Mar 2026). We score the reported round and show both.",
+    "source": "https://siliconangle.com/2026/11/06/openai-reportedly-raises-11b-in-new-funding-at-1-25t-valuation/"
    },
    {
     "topic": "OpenAI revenue",
@@ -67,13 +67,13 @@
    },
    {
     "topic": "Anthropic revenue",
-    "text": "$65B run rate (Axios, Aug 2026). The S-1/A shows Q3 2026 revenue of $16.956B (about $67.8B annualized). Unverified reports claim more than $80B.",
-    "source": "https://www.indmoney.com/blog/us-stocks/anthropic-ipo-s1-filing-explained"
+    "text": "About $81B run rate as of Oct 31 2026 per the updated prospectus (The Next Web). Trailing 12-month revenue to Sep 30 2026 was $35.3B. A run rate and a 12-month total measure different things.",
+    "source": "https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation"
    },
    {
     "topic": "xAI valuation",
-    "text": "The $2.0T figure is SpaceX's total market cap, not xAI alone. Share-price sources also disagree ($146.90 vs $134.97).",
-    "source": "https://stockanalysis.com/list/biggest-companies"
+    "text": "The $1.87T figure is SpaceX's total market cap (Nov 16 2026), not xAI alone. TipRanks shows about $1.89T.",
+    "source": "https://www.finhacker.cz/en/stocks/spacex-market-cap/"
    },
    {
     "topic": "Qwen users",
@@ -94,9 +94,16 @@
     "topic": "Index versions",
     "text": "Grok 4.5 scored 54 and Kimi K3 scored 57 on the pre-v5 Artificial Analysis index. Those scores are not comparable to v5 and are not used.",
     "source": "https://artificialanalysis.ai/articles/four-frontier-launches-in-eight-days-six-labs-now-field-a-model-above-50-on-the-artificial-analysis-intelligence-index"
+   },
+   {
+    "topic": "Anthropic IPO valuation",
+    "text": "IPO terms imply about $1.4T fully diluted at the top of the $70-78 range (The Next Web) or about $1.2T at the midpoint (Renaissance Capital). We keep the $965B Series H figure until the IPO prices.",
+    "source": "https://www.renaissancecapital.com/IPO-Center/News/122657/anthropic-sets-terms-for-61-billion-ipo-targeting-a-1.2-trillion-market-cap"
    }
   ],
-  "disclaimer": "Independent; not affiliated with any AI lab. Not investment advice."
+  "disclaimer": "Independent; not affiliated with any AI lab. Not investment advice.",
+  "update_cadence": "Daily target. Each figure keeps its own source URL and date; a figure that cannot be re-verified keeps its last good value and date.",
+  "endpoint": "https://www.greatairace.com/data/race.json"
  },
  "racers": [
   {
@@ -115,10 +122,10 @@
     "note": "Well-established fact; page not fetched this run"
    },
    "flagship_model": {
-    "value": "GPT-6 Astra (released Sep 3-4 2026); GPT-6.1 Sol latest release (Sep 29 2026)",
-    "source": "https://presenc.ai/research/openai-gpt-model-lineage-2026",
-    "date": "2026-10-01",
-    "note": "GPT-6.1 Astra reportedly held back at DevDay"
+    "value": "GPT-6 Astra (Sep 2026) and GPT-6.1 Sol (Sep 29 2026); GPT-6 Cyber, a limited-access security model, launched Nov 5 2026",
+    "source": "https://www.esecurityplanet.com/news/news-openai-gpt-6-cyber-security-benchmarks/",
+    "date": "2026-11-06",
+    "note": "GPT-6 Cyber is limited to vetted Daybreak Red customers"
    },
    "total_funding_usd": {
     "value": 178070000000.0,
@@ -128,16 +135,16 @@
    },
    "money": {
     "valuation_usd": {
-     "value": 852000000000.0,
-     "source": "https://sacra.com/c/openai/",
-     "date": "2026-03-31",
-     "note": "Last confirmed primary round ($122B raise). CONFLICT: StockAnalysis implied secondary-market valuation $993.7B as of 2026-10-29 (https://stockanalysis.com/private/openai/valuation/). Confidential IPO filing June 8 2026, reportedly targeting >$1T."
+     "value": 1250000000000.0,
+     "source": "https://siliconangle.com/2026/11/06/openai-reportedly-raises-11b-in-new-funding-at-1-25t-valuation/",
+     "date": "2026-11-06",
+     "note": "Bloomberg-reported round: about $11B wired so far at a $1.25T valuation, with up to $9B more possible. Not confirmed by OpenAI. Previous confirmed primary round: $852B (Mar 2026, https://sacra.com/c/openai/)."
     },
     "annualized_revenue_usd": {
      "value": 50000000000.0,
-     "source": "https://sacra.com/c/openai/",
-     "date": "2026-09",
-     "note": "~$50B run rate in Sept 2026 per FT/Reuters reporting (Oct 8 2026). CONFLICT: earlier company signals of ~$70B year-end target; US News headline says Sept run rate was ~$20B below what was previously signaled (https://money.usnews.com/investing/news/articles/2026-10-08/openais-annualized-revenue-20-billion-less-than-previously-signaled-ft-reports, not fully fetched)."
+     "source": "https://siliconangle.com/2026/11/06/openai-reportedly-raises-11b-in-new-funding-at-1-25t-valuation/",
+     "date": "2026-09-30",
+     "note": "FT (via SiliconANGLE): about $50B net annualized revenue at quarter end, up 77% year over year. Earlier company signals were about $20B higher (https://sacra.com/c/openai/)."
     },
     "profit_loss": {
      "value": "Loss-making; FT (Sept 2026) reports projected cumulative negative free cash flow of ~$278B over 2026-2030; ~33% gross margin",
@@ -160,10 +167,10 @@
      "note": "Sensor Tower Q3 2026 data as reported by Trending Topics"
     },
     "similarweb_web_share_pct": {
-     "value": 56.4,
-     "source": "https://officechai.com/ai/geminis-traffic-share-falls-for-fourth-straight-month-as-chatgpt-regains-ground-similarweb-data/",
-     "date": "2026-09",
-     "note": "Share of worldwide gen-AI website traffic, Sept 2026, published Oct 12 2026"
+     "value": 55.7,
+     "source": "https://officechai.com/ai/claude-takes-website-traffic-share-from-chatgpt-gemini-in-october/",
+     "date": "2026-10",
+     "note": "Share of worldwide gen-AI website traffic, Oct 2026 (Sept: 56.4%)"
     }
    },
    "brains": {
@@ -172,15 +179,15 @@
       "model": "GPT-6 Astra (max)",
       "score": 57
      },
-     "source": "https://capitalandcompute.net/md/artificial-analysis-index-v5-which-models-dropped.md",
-     "date": "2026-11-04",
-     "note": "Artificial Analysis Intelligence Index v5 (launched ~Oct 28 2026; not comparable to v4.x scores). Secondary summary of AA data; artificialanalysis.ai not fetchable from this session."
+     "source": "https://officechai.com/ai/anthropic-jumps-to-top-of-artificial-analysis-intelligence-index-with-fable-5-2-beats-gemini-4-carbon-by-5-points/",
+     "date": "2026-11-09",
+     "note": "Artificial Analysis Intelligence Index v5.0.1 as reported by OfficeChai (Nov 9 2026). v5 scores are not comparable to v4.x."
     },
     "arena_text_rank": {
      "value": null,
      "source": "https://officechai.com/ai/gemini-4-carbon-tops-text-arena-places-2nd-on-agent-arena/",
      "date": "2026-10-28",
-     "note": "No OpenAI model in the Text Arena top 5 as of Oct 28 2026; exact rank not found"
+     "note": "No OpenAI model in the Text Arena top 5 as of Oct 28 2026; exact rank not found. Not re-verified on Nov 17 2026 (leaderboard page could not be read); last good value kept."
     }
    },
    "muscle": {
@@ -198,10 +205,10 @@
      "date": "2026-09"
     },
     "major_releases_last_6mo": {
-     "value": 5,
-     "source": "https://presenc.ai/research/openai-gpt-model-lineage-2026",
-     "date": "2026-10-01",
-     "note": "Count since May 6 2026: GPT-5.6 Sol preview (Jun 26), GPT-5.6 Sol/Terra/Luna (Jul 9), GPT-6 Astra (Sep 3), GPT-6 Sol + Luna (Sep 22), GPT-6.1 Sol (Sep 29). Counting method: launch events."
+     "value": 6,
+     "source": "https://www.esecurityplanet.com/news/news-openai-gpt-6-cyber-security-benchmarks/",
+     "date": "2026-11-06",
+     "note": "Count since May 17 2026: GPT-5.6 Sol preview (Jun 26), GPT-5.6 Sol/Terra/Luna (Jul 9), GPT-6 Astra (Sep 3), GPT-6 Sol + Luna (Sep 22), GPT-6.1 Sol (Sep 29), GPT-6 Cyber (Nov 5). Counting method: launch events."
     }
    },
    "openness": {
@@ -228,11 +235,11 @@
    },
    "scoring": {
     "lanes": {
-     "money": 77.5,
+     "money": 80.4,
      "reach": 100.0,
-     "brains": 96.6,
+     "brains": 87.7,
      "muscle": 79.5,
-     "momentum": 83.3,
+     "momentum": 85.7,
      "openness": 50.0
     },
     "detail": {
@@ -241,7 +248,7 @@
       "parts": [
        {
         "label": "Valuation / market cap",
-        "score": 79.5,
+        "score": 85.4,
         "scale": "log"
        },
        {
@@ -271,7 +278,7 @@
       "parts": [
        {
         "label": "AA Intelligence Index v5",
-        "score": 96.6,
+        "score": 87.7,
         "scale": "linear"
        },
        {
@@ -296,7 +303,7 @@
       "parts": [
        {
         "label": "Releases, last 6 months",
-        "score": 83.3,
+        "score": 85.7,
         "scale": "linear"
        }
       ]
@@ -314,9 +321,9 @@
     },
     "inputs": {
      "valuation": {
-      "value": 852000000000.0,
+      "value": 1250000000000.0,
       "from": "money.valuation_usd",
-      "how": "Last primary round"
+      "how": "Reported new round (Bloomberg)"
      },
      "revenue": {
       "value": 50000000000.0,
@@ -329,7 +336,7 @@
       "how": "~1 billion weekly active users (ChatGPT)"
      },
      "webshare": {
-      "value": 56.4,
+      "value": 55.7,
       "from": "reach.similarweb_web_share_pct",
       "how": null
      },
@@ -349,13 +356,13 @@
       "how": "Stargate Abilene, 824 MW (Epoch AI)"
      },
      "releases": {
-      "value": 5,
+      "value": 6,
       "from": "momentum.major_releases_last_6mo",
       "how": null
      }
     }
    },
-   "composite_default": 81.1,
+   "composite_default": 80.5,
    "rank_default": 1
   },
   {
@@ -374,9 +381,10 @@
     "note": "Well-established fact; page not fetched this run"
    },
    "flagship_model": {
-    "value": "Gemini 4 Carbon (announced Oct 28 2026; limited access via Fairwind program); Gemini 4 Argon generally available (~Oct 14 2026)",
-    "source": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/",
-    "date": "2026-10-28"
+    "value": "Gemini 4 Carbon (generally available Nov 10 2026); Gemini 4 Hydrogen, a faster model for coding and agent work (Nov 12 2026)",
+    "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "date": "2026-11-10",
+    "note": "Hydrogen: https://interestingengineering.com/ai-robotics/google-gemini-4-hydrogen-coding-benchmark (2026-11-12)"
    },
    "total_funding_usd": {
     "value": null,
@@ -386,10 +394,10 @@
    },
    "money": {
     "valuation_usd": {
-     "value": 3870000000000.0,
-     "source": "https://stockanalysis.com/list/biggest-companies",
-     "date": "2026-11-06",
-     "note": "Alphabet market cap (rank #4); page updates daily, no explicit date shown. Note: datastudios reports GOOGL fell 12.6% on Oct 29 to $283.82; StockAnalysis shows $316.80."
+     "value": 3640000000000.0,
+     "source": "https://stockanalysis.com/stocks/googl/statistics",
+     "date": "2026-11-13",
+     "note": "Alphabet market cap (parent company), Nov 13 2026 close. AI is not broken out."
     },
     "annualized_revenue_usd": {
      "value": 510400000000.0,
@@ -417,20 +425,21 @@
      "note": "CONFLICT with Google's 1B+ (Google counts app + web; Sensor Tower is mobile app estimate)"
     },
     "similarweb_web_share_pct": {
-     "value": 25.0,
-     "source": "https://officechai.com/ai/geminis-traffic-share-falls-for-fourth-straight-month-as-chatgpt-regains-ground-similarweb-data/",
-     "date": "2026-09"
+     "value": 24.2,
+     "source": "https://officechai.com/ai/claude-takes-website-traffic-share-from-chatgpt-gemini-in-october/",
+     "date": "2026-10",
+     "note": "Share of worldwide gen-AI website traffic, Oct 2026 (Sept: 25.0%)"
     }
    },
    "brains": {
     "aa_intelligence_index": {
      "value": {
       "model": "Gemini 4 Carbon (high)",
-      "score": 59
+      "score": 60
      },
-     "source": "https://www.stephanmiller.com/model-buzz-roundup-week-of-1028/",
-     "date": "2026-11-03",
-     "note": "AA v5. Carbon is not publicly available. Best generally available: Gemini 4 Argon = 50 (https://capitalandcompute.net/md/artificial-analysis-index-v5-which-models-dropped.md)"
+     "source": "https://officechai.com/ai/anthropic-jumps-to-top-of-artificial-analysis-intelligence-index-with-fable-5-2-beats-gemini-4-carbon-by-5-points/",
+     "date": "2026-11-09",
+     "note": "Artificial Analysis Intelligence Index v5.0.1 as reported by OfficeChai; Carbon scored 59 at launch (Oct 28). v5 scores are not comparable to v4.x."
     },
     "arena_text_rank": {
      "value": {
@@ -440,7 +449,7 @@
      },
      "source": "https://officechai.com/ai/gemini-4-carbon-tops-text-arena-places-2nd-on-agent-arena/",
      "date": "2026-10-28",
-     "note": "Only ~4,400 votes at time of report. Gemini 4 Argon (High) #2 at 1520."
+     "note": "Only ~4,400 votes at time of report. Gemini 4 Argon (High) #2 at 1520. Not re-verified on Nov 17 2026 (leaderboard page could not be read); last good value kept."
     }
    },
    "muscle": {
@@ -458,10 +467,10 @@
      "date": "2026-10-28"
     },
     "major_releases_last_6mo": {
-     "value": 4,
-     "source": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/",
-     "date": "2026-10-28",
-     "note": "Minimum count: Gemini 4 Argon, Gemini 4 Carbon, Genie 4, plus Gemini 3.7/3.8 Flash. Exact dates of Flash releases not verified."
+     "value": 5,
+     "source": "https://interestingengineering.com/ai-robotics/google-gemini-4-hydrogen-coding-benchmark",
+     "date": "2026-11-12",
+     "note": "Minimum count since May 17 2026: Gemini 4 Argon, Gemini 4 Carbon, Gemini 4 Hydrogen, Genie 4, plus Gemini 3.7/3.8 Flash. Exact dates of Flash releases not verified."
     }
    },
    "openness": {
@@ -488,11 +497,11 @@
    "scoring": {
     "lanes": {
      "money": 100.0,
-     "reach": 72.2,
-     "brains": 100.0,
+     "reach": 71.7,
+     "brains": 96.2,
      "muscle": 35.5,
-     "momentum": 66.7,
-     "openness": 70.3
+     "momentum": 71.4,
+     "openness": 68.8
     },
     "detail": {
      "money": {
@@ -520,7 +529,7 @@
        },
        {
         "label": "Web traffic share",
-        "score": 44.3,
+        "score": 43.4,
         "scale": "linear"
        }
       ]
@@ -530,7 +539,7 @@
       "parts": [
        {
         "label": "AA Intelligence Index v5",
-        "score": 100.0,
+        "score": 92.3,
         "scale": "linear"
        },
        {
@@ -555,7 +564,7 @@
       "parts": [
        {
         "label": "Releases, last 6 months",
-        "score": 66.7,
+        "score": 71.4,
         "scale": "linear"
        }
       ]
@@ -565,7 +574,7 @@
       "parts": [
        {
         "label": "Open weights; latest dated Apr 2, 2026",
-        "score": 70.3,
+        "score": 68.8,
         "scale": "rule"
        }
       ]
@@ -573,7 +582,7 @@
     },
     "inputs": {
      "valuation": {
-      "value": 3870000000000.0,
+      "value": 3640000000000.0,
       "from": "money.valuation_usd",
       "how": "Alphabet market cap (parent company)"
      },
@@ -588,12 +597,12 @@
       "how": "1 billion+ Gemini app MAU (Google)"
      },
      "webshare": {
-      "value": 25.0,
+      "value": 24.2,
       "from": "reach.similarweb_web_share_pct",
       "how": null
      },
      "aa": {
-      "value": 59,
+      "value": 60,
       "from": "brains.aa_intelligence_index",
       "how": null
      },
@@ -608,13 +617,13 @@
       "how": "Pryor North (OK), ~368 MW (Epoch AI); distributed TPU fleet not captured"
      },
      "releases": {
-      "value": 4,
+      "value": 5,
       "from": "momentum.major_releases_last_6mo",
       "how": null
      }
     }
    },
-   "composite_default": 74.1,
+   "composite_default": 73.9,
    "rank_default": 2
   },
   {
@@ -633,9 +642,9 @@
     "note": "Well-established fact"
    },
    "flagship_model": {
-    "value": "Muse Wonder (described as Meta's first frontier model)",
-    "source": "https://www.clickondetroit.com/business/2026/10/21/meta-q3-revenue-tops-estimates-and-zuckerberg-says-muse-accounts-have-topped-10-million/",
-    "date": "2026-10-21"
+    "value": "Muse Wonder (Meta's frontier model, Oct 2026); Muse Ember, a low-cost model for agent tasks (Nov 9 2026)",
+    "source": "https://letsdatascience.com/news/meta-releases-muse-ember-a-low-cost-model-for-agent-executio-7b564cff",
+    "date": "2026-11-09"
    },
    "total_funding_usd": {
     "value": null,
@@ -645,10 +654,10 @@
    },
    "money": {
     "valuation_usd": {
-     "value": 1610000000000.0,
-     "source": "https://stockanalysis.com/list/biggest-companies",
-     "date": "2026-11-06",
-     "note": "Meta market cap (rank #9); page updates daily, no explicit date"
+     "value": 1640000000000.0,
+     "source": "https://stockanalysis.com/stocks/meta/statistics",
+     "date": "2026-11-13",
+     "note": "Meta market cap (parent company), Nov 13 2026 close. AI is not broken out."
     },
     "annualized_revenue_usd": {
      "value": 258400000000.0,
@@ -698,7 +707,8 @@
       "score": 1507
      },
      "source": "https://officechai.com/ai/gemini-4-carbon-tops-text-arena-places-2nd-on-agent-arena/",
-     "date": "2026-10-28"
+     "date": "2026-10-28",
+     "note": "Not re-verified on Nov 17 2026 (leaderboard page could not be read); last good value kept."
     }
    },
    "muscle": {
@@ -716,10 +726,10 @@
      "date": "2026-11-04"
     },
     "major_releases_last_6mo": {
-     "value": 4,
-     "source": "https://www.nasdaq.com/articles/meta-platforms-q2-earnings-call-highlights",
-     "date": "2026-07-29",
-     "note": "Approximate: Muse Spark 1.1, Muse (agent, Aug), Muse Wonder, Muse Spark Open (weights Oct 15). Muse Spark 1.2/1.3 also referenced; dates not fully verified."
+     "value": 5,
+     "source": "https://letsdatascience.com/news/meta-releases-muse-ember-a-low-cost-model-for-agent-executio-7b564cff",
+     "date": "2026-11-09",
+     "note": "Approximate: Muse Spark 1.1, Muse (agent, Aug), Muse Wonder, Muse Spark Open (weights Oct 15), Muse Ember (Nov 9). Muse Glimmer (Aug) and Spark 1.2/1.3 also referenced; dates not fully verified."
     }
    },
    "openness": {
@@ -744,12 +754,12 @@
    },
    "scoring": {
     "lanes": {
-     "money": 90.5,
+     "money": 91.0,
      "reach": 0.0,
-     "brains": 79.3,
+     "brains": 75.4,
      "muscle": 60.8,
-     "momentum": 66.7,
-     "openness": 97.1
+     "momentum": 71.4,
+     "openness": 95.6
     },
     "detail": {
      "money": {
@@ -757,7 +767,7 @@
       "parts": [
        {
         "label": "Valuation / market cap",
-        "score": 88.1,
+        "score": 89.1,
         "scale": "log"
        },
        {
@@ -787,7 +797,7 @@
       "parts": [
        {
         "label": "AA Intelligence Index v5",
-        "score": 84.7,
+        "score": 76.9,
         "scale": "linear"
        },
        {
@@ -812,7 +822,7 @@
       "parts": [
        {
         "label": "Releases, last 6 months",
-        "score": 66.7,
+        "score": 71.4,
         "scale": "linear"
        }
       ]
@@ -822,7 +832,7 @@
       "parts": [
        {
         "label": "Open weights; latest dated Oct 15, 2026",
-        "score": 97.1,
+        "score": 95.6,
         "scale": "rule"
        }
       ]
@@ -830,7 +840,7 @@
     },
     "inputs": {
      "valuation": {
-      "value": 1610000000000.0,
+      "value": 1640000000000.0,
       "from": "money.valuation_usd",
       "how": "Meta market cap (parent company)"
      },
@@ -865,7 +875,7 @@
       "how": "Prometheus (OH), 631 MW"
      },
      "releases": {
-      "value": 4,
+      "value": 5,
       "from": "momentum.major_releases_last_6mo",
       "how": null
      }
@@ -890,9 +900,9 @@
     "note": "Well-established fact; page not fetched this run"
    },
    "flagship_model": {
-    "value": "Claude Opus 5.5 (released Sep 22 2026)",
-    "source": "https://andrew.ooo/answers/claude-sonnet-5-5-vs-claude-opus-5-5-which-to-use-september-2026/",
-    "date": "2026-09"
+    "value": "Claude Fable 5.2 (Nov 9 2026, available to all users); Claude Mythos 5.2 for vetted organizations; Claude Opus 5.5 remains the recommended default",
+    "source": "https://sdtimes.com/ai/anthropic-introduces-claude-fable-5-2-mythos-5-2/",
+    "date": "2026-11-09"
    },
    "total_funding_usd": {
     "value": 141100000000.0,
@@ -905,13 +915,13 @@
      "value": 965000000000.0,
      "source": "https://the-decoder.com/claude-company-anthropic-nears-a-trillion-dollar-valuation-after-raising-65-billion-in-series-h/",
      "date": "2026-05-28",
-     "note": "Series H post-money ($65B raise). IPO pending: Reuters reports likely ~$1.5T market cap at listing; marketing could begin week of Nov 9 2026 (https://www.iposcoop.com/the-ipo-buzz-anthropic-ant-proposed-files-its-s-1/, 2026-10-26). FT/Aug investor talk of >$2T."
+     "note": "Series H post-money ($65B raise). Still the scored figure until the IPO prices. IPO terms (Nov 10 2026): 825M shares at $70-78, Nasdaq ticker ANT, trading expected Nov 19; about $1.4T fully diluted at the top of the range per The Next Web (https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation), about $1.2T at the midpoint per Renaissance Capital (https://www.renaissancecapital.com/IPO-Center/News/122657/anthropic-sets-terms-for-61-billion-ipo-targeting-a-1.2-trillion-market-cap)."
     },
     "annualized_revenue_usd": {
-     "value": 65000000000.0,
-     "source": "https://www.axios.com/2026/08/17/anthropic-revenue-run-rate-ipo-openai",
-     "date": "2026-08-17",
-     "note": "Run rate passed $65B by late July 2026 (Axios; page not fetched, corroborated by useluminix and Reuters syndications). Unverified secondary reports claim >$80B in Oct 2026 (cryptobriefing, not fetchable). S-1/A: Q3 2026 GAAP revenue $16.956B (x4 = ~$67.8B annualized) - https://www.indmoney.com/blog/us-stocks/anthropic-ipo-s1-filing-explained (updated 2026-11-03)."
+     "value": 81000000000.0,
+     "source": "https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation",
+     "date": "2026-10-31",
+     "note": "Roughly $81B run rate as of Oct 31 2026, per the updated IPO prospectus as reported by The Next Web. Revenue for the 12 months to Sep 30 2026: $35.3B (https://www.renaissancecapital.com/IPO-Center/News/122657/anthropic-sets-terms-for-61-billion-ipo-targeting-a-1.2-trillion-market-cap)."
     },
     "profit_loss": {
      "value": "Nine months to Sep 30 2026: operating loss $1.26B; net loss $104.0B (mostly a $94.3B non-cash fair-value charge on convertible notes). Q2 2026 operating profit $974M; Q3 operating loss $567M.",
@@ -934,20 +944,21 @@
      "note": "Absolute MAU not stated"
     },
     "similarweb_web_share_pct": {
-     "value": 9.6,
-     "source": "https://officechai.com/ai/geminis-traffic-share-falls-for-fourth-straight-month-as-chatgpt-regains-ground-similarweb-data/",
-     "date": "2026-09"
+     "value": 11.5,
+     "source": "https://officechai.com/ai/claude-takes-website-traffic-share-from-chatgpt-gemini-in-october/",
+     "date": "2026-10",
+     "note": "Share of worldwide gen-AI website traffic, Oct 2026 (Sept: 9.6%)"
     }
    },
    "brains": {
     "aa_intelligence_index": {
      "value": {
-      "model": "Claude Opus 5.5 (max)",
-      "score": 58
+      "model": "Claude Fable 5.2 (max)",
+      "score": 65
      },
-     "source": "https://capitalandcompute.net/md/artificial-analysis-index-v5-which-models-dropped.md",
-     "date": "2026-11-04",
-     "note": "Artificial Analysis Intelligence Index v5 (launched ~Oct 28 2026; not comparable to v4.x scores). Secondary summary of AA data; artificialanalysis.ai not fetchable from this session. Opus 5.5 was #1 on launch of v5 (Oct 28); Gemini 4 Carbon (high) later scored 59 per https://www.stephanmiller.com/model-buzz-roundup-week-of-1028/"
+     "source": "https://officechai.com/ai/anthropic-jumps-to-top-of-artificial-analysis-intelligence-index-with-fable-5-2-beats-gemini-4-carbon-by-5-points/",
+     "date": "2026-11-09",
+     "note": "Artificial Analysis Intelligence Index v5.0.1 as reported by OfficeChai (Nov 9 2026): Fable 5.2 (max) 65, Claude Opus 5.5 (max) 59. v5 scores are not comparable to v4.x."
     },
     "arena_text_rank": {
      "value": {
@@ -957,7 +968,7 @@
      },
      "source": "https://officechai.com/ai/gemini-4-carbon-tops-text-arena-places-2nd-on-agent-arena/",
      "date": "2026-10-28",
-     "note": "Claude Fable 5.1 (Max) #5 at 1504"
+     "note": "Claude Fable 5.1 (Max) #5 at 1504. Not re-verified on Nov 17 2026 (leaderboard page could not be read); last good value kept."
     }
    },
    "muscle": {
@@ -975,10 +986,10 @@
      "date": "2026-11-02"
     },
     "major_releases_last_6mo": {
-     "value": 6,
-     "source": "https://andrew.ooo/answers/claude-sonnet-5-5-vs-claude-opus-5-5-which-to-use-september-2026/",
-     "date": "2026-09",
-     "note": "Approximate: Claude Opus 4.8 (~May 28), Fable 5 (~Jul), Opus 5 / Sonnet 5 (~Jul), Fable 5.1, Opus 5.5 (Sep 22), Sonnet 5.5 (Sep 28). Several exact dates unverified."
+     "value": 7,
+     "source": "https://sdtimes.com/ai/anthropic-introduces-claude-fable-5-2-mythos-5-2/",
+     "date": "2026-11-09",
+     "note": "Approximate: Claude Opus 4.8 (~May 28), Fable 5 (~Jul), Opus 5 / Sonnet 5 (~Jul), Fable 5.1, Opus 5.5 (Sep 22), Sonnet 5.5 (Sep 28), Fable 5.2 + Mythos 5.2 (Nov 9). Several exact dates unverified."
     }
    },
    "openness": {
@@ -1005,9 +1016,9 @@
    },
    "scoring": {
     "lanes": {
-     "money": 79.7,
-     "reach": 17.0,
-     "brains": 88.8,
+     "money": 81.2,
+     "reach": 20.6,
+     "brains": 89.6,
      "muscle": 100.0,
      "momentum": 100.0,
      "openness": 0.0
@@ -1018,12 +1029,12 @@
       "parts": [
        {
         "label": "Valuation / market cap",
-        "score": 81.2,
+        "score": 81.9,
         "scale": "log"
        },
        {
         "label": "Annualized revenue",
-        "score": 78.2,
+        "score": 80.5,
         "scale": "log"
        }
       ]
@@ -1038,7 +1049,7 @@
        },
        {
         "label": "Web traffic share",
-        "score": 17.0,
+        "score": 20.6,
         "scale": "linear"
        }
       ]
@@ -1048,7 +1059,7 @@
       "parts": [
        {
         "label": "AA Intelligence Index v5",
-        "score": 98.3,
+        "score": 100.0,
         "scale": "linear"
        },
        {
@@ -1096,7 +1107,7 @@
       "how": "Series H post-money"
      },
      "revenue": {
-      "value": 65000000000.0,
+      "value": 81000000000.0,
       "from": "money.annualized_revenue_usd",
       "how": null
      },
@@ -1106,12 +1117,12 @@
       "how": "Claude user count not published"
      },
      "webshare": {
-      "value": 9.6,
+      "value": 11.5,
       "from": "reach.similarweb_web_share_pct",
       "how": null
      },
      "aa": {
-      "value": 58,
+      "value": 65,
       "from": "brains.aa_intelligence_index",
       "how": null
      },
@@ -1126,13 +1137,13 @@
       "how": "New Carlisle (IN), 1,037 MW (Epoch AI)"
      },
      "releases": {
-      "value": 6,
+      "value": 7,
       "from": "momentum.major_releases_last_6mo",
       "how": null
      }
     }
    },
-   "composite_default": 64.2,
+   "composite_default": 65.2,
    "rank_default": 4
   },
   {
@@ -1154,7 +1165,7 @@
     "value": "Grok 4.7 (released Sep 21 2026)",
     "source": "https://geotoolbox.ai/blog/grok-5.md",
     "date": "2026-11-04",
-    "note": "Grok 5 still in training, not released"
+    "note": "Grok 4.8 had finished pre-training and was in reinforcement learning as of Nov 10 2026, not yet released (https://www.ibtimes.co.uk/elon-musk-admits-grok-48-not-good-anthropic-rival-calling-opus-55-masterpiece-1831712)."
    },
    "total_funding_usd": {
     "value": null,
@@ -1164,10 +1175,10 @@
    },
    "money": {
     "valuation_usd": {
-     "value": 2000000000000.0,
-     "source": "https://stockanalysis.com/list/biggest-companies",
-     "date": "2026-11-06",
-     "note": "This is SpaceX's total market cap (SPCX), not xAI alone. CONFLICT: share price $146.90 on StockAnalysis vs $134.97 on Nov 4 per teslarati. IPO priced ~$1.75T (June 12 2026)."
+     "value": 1865000000000.0,
+     "source": "https://www.finhacker.cz/en/stocks/spacex-market-cap/",
+     "date": "2026-11-16",
+     "note": "SpaceX total market cap (Nov 16 2026 close), not xAI alone. TipRanks shows about $1.89T (undated)."
     },
     "annualized_revenue_usd": {
      "value": 30240000000.0,
@@ -1215,7 +1226,7 @@
      "value": null,
      "source": null,
      "date": null,
-     "note": "Not in Text Arena top 5 (Oct 28 2026); exact rank not found"
+     "note": "Not in Text Arena top 5 (Oct 28 2026); exact rank not found. Not re-verified on Nov 17 2026 (leaderboard page could not be read); last good value kept."
     }
    },
    "muscle": {
@@ -1263,11 +1274,11 @@
    },
    "scoring": {
     "lanes": {
-     "money": 80.6,
+     "money": 80.5,
      "reach": 27.9,
-     "brains": 59.3,
+     "brains": 53.8,
      "muscle": 91.2,
-     "momentum": 33.3,
+     "momentum": 28.6,
      "openness": 50.0
     },
     "detail": {
@@ -1276,7 +1287,7 @@
       "parts": [
        {
         "label": "Valuation / market cap",
-        "score": 91.1,
+        "score": 90.9,
         "scale": "log"
        },
        {
@@ -1306,7 +1317,7 @@
       "parts": [
        {
         "label": "AA Intelligence Index v5",
-        "score": 59.3,
+        "score": 53.8,
         "scale": "linear"
        },
        {
@@ -1331,7 +1342,7 @@
       "parts": [
        {
         "label": "Releases, last 6 months",
-        "score": 33.3,
+        "score": 28.6,
         "scale": "linear"
        }
       ]
@@ -1349,7 +1360,7 @@
     },
     "inputs": {
      "valuation": {
-      "value": 2000000000000.0,
+      "value": 1865000000000.0,
       "from": "money.valuation_usd",
       "how": "SpaceX total market cap, not xAI alone"
      },
@@ -1390,7 +1401,7 @@
      }
     }
    },
-   "composite_default": 57.1,
+   "composite_default": 55.3,
    "rank_default": 5
   },
   {
@@ -1409,9 +1420,9 @@
     "note": "Well-established fact"
    },
    "flagship_model": {
-    "value": "Qwen3.8-Max (Aug 2026, open weights, 2.4T params)",
-    "source": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465926099220/tm2623667d1_ex99-1.htm",
-    "date": "2026-08-20"
+    "value": "Qwen4-Max (managed preview from Nov 11 2026; open weights not confirmed); Qwen3.8-Max (Aug 2026, open weights, 2.4T params)",
+    "source": "https://magica.com/news/alibaba-qwen4-max-preview-token-plan",
+    "date": "2026-11-11"
    },
    "total_funding_usd": {
     "value": null,
@@ -1421,10 +1432,10 @@
    },
    "money": {
     "valuation_usd": {
-     "value": 248670000000.0,
-     "source": "https://stockanalysis.com/list/biggest-companies",
-     "date": "2026-11-06",
-     "note": "Alibaba market cap (HKG:9988); no explicit date on page"
+     "value": 234100000000.0,
+     "source": "https://stockanalysis.com/stocks/baba/",
+     "date": "2026-11-13",
+     "note": "Alibaba market cap (parent company), quote Nov 13 2026. AI is not broken out."
     },
     "annualized_revenue_usd": {
      "value": 7296000000.0,
@@ -1473,7 +1484,7 @@
      "value": null,
      "source": null,
      "date": null,
-     "note": "Not found"
+     "note": "Not found. Not re-verified on Nov 17 2026 (leaderboard page could not be read); last good value kept."
     }
    },
    "muscle": {
@@ -1491,10 +1502,10 @@
      "date": "2026-08-20"
     },
     "major_releases_last_6mo": {
-     "value": 1,
-     "source": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465926099220/tm2623667d1_ex99-1.htm",
-     "date": "2026-08-20",
-     "note": "Lower bound: only Qwen3.8-Max verified; Alibaba also cites unnamed coding/video/audio/image/music models. Likely undercount."
+     "value": 2,
+     "source": "https://magica.com/news/alibaba-qwen4-max-preview-token-plan",
+     "date": "2026-11-11",
+     "note": "Lower bound: Qwen3.8-Max (Aug) and Qwen4-Max preview (Nov 11). Alibaba also cites unnamed coding/video/audio/image/music models. Likely undercount."
     }
    },
    "openness": {
@@ -1519,12 +1530,12 @@
    },
    "scoring": {
     "lanes": {
-     "money": 59.0,
+     "money": 58.8,
      "reach": 58.5,
-     "brains": 57.6,
+     "brains": 52.3,
      "muscle": 0.0,
-     "momentum": 16.7,
-     "openness": 88.7
+     "momentum": 28.6,
+     "openness": 87.2
     },
     "detail": {
      "money": {
@@ -1532,7 +1543,7 @@
       "parts": [
        {
         "label": "Valuation / market cap",
-        "score": 62.8,
+        "score": 62.5,
         "scale": "log"
        },
        {
@@ -1562,7 +1573,7 @@
       "parts": [
        {
         "label": "AA Intelligence Index v5",
-        "score": 57.6,
+        "score": 52.3,
         "scale": "linear"
        },
        {
@@ -1587,7 +1598,7 @@
       "parts": [
        {
         "label": "Releases, last 6 months",
-        "score": 16.7,
+        "score": 28.6,
         "scale": "linear"
        }
       ]
@@ -1597,7 +1608,7 @@
       "parts": [
        {
         "label": "Open weights; latest dated Aug 2026",
-        "score": 88.7,
+        "score": 87.2,
         "scale": "rule"
        }
       ]
@@ -1605,7 +1616,7 @@
     },
     "inputs": {
      "valuation": {
-      "value": 248670000000.0,
+      "value": 234100000000.0,
       "from": "money.valuation_usd",
       "how": "Alibaba market cap (parent company)"
      },
@@ -1640,13 +1651,13 @@
       "how": "Capex reported, no MW figure"
      },
      "releases": {
-      "value": 1,
+      "value": 2,
       "from": "momentum.major_releases_last_6mo",
       "how": "Lower bound"
      }
     }
    },
-   "composite_default": 46.8,
+   "composite_default": 47.6,
    "rank_default": 6
   },
   {
@@ -1730,7 +1741,7 @@
      "value": null,
      "source": null,
      "date": null,
-     "note": "Overall rank not found; V4.1 Flash #26 in Instruction Following category (Sept 10 snapshot) per https://www.stephanmiller.com/model-buzz-roundup-week-of-1028/"
+     "note": "Overall rank not found; V4.1 Flash #26 in Instruction Following category (Sept 10 snapshot) per https://www.stephanmiller.com/model-buzz-roundup-week-of-1028/. Not re-verified on Nov 17 2026 (leaderboard page could not be read); last good value kept."
     }
    },
    "muscle": {
@@ -1777,12 +1788,12 @@
    },
    "scoring": {
     "lanes": {
-     "money": 41.1,
-     "reach": 29.4,
-     "brains": 54.2,
+     "money": 41.5,
+     "reach": 29.5,
+     "brains": 49.2,
      "muscle": 0.0,
-     "momentum": 50.0,
-     "openness": 92.2
+     "momentum": 42.9,
+     "openness": 90.7
     },
     "detail": {
      "money": {
@@ -1790,7 +1801,7 @@
       "parts": [
        {
         "label": "Valuation / market cap",
-        "score": 41.1,
+        "score": 41.5,
         "scale": "log"
        },
        {
@@ -1810,7 +1821,7 @@
        },
        {
         "label": "Web traffic share",
-        "score": 6.0,
+        "score": 6.1,
         "scale": "linear"
        }
       ]
@@ -1820,7 +1831,7 @@
       "parts": [
        {
         "label": "AA Intelligence Index v5",
-        "score": 54.2,
+        "score": 49.2,
         "scale": "linear"
        },
        {
@@ -1845,7 +1856,7 @@
       "parts": [
        {
         "label": "Releases, last 6 months",
-        "score": 50.0,
+        "score": 42.9,
         "scale": "linear"
        }
       ]
@@ -1855,7 +1866,7 @@
       "parts": [
        {
         "label": "Open weights; latest dated Sep 10, 2026",
-        "score": 92.2,
+        "score": 90.7,
         "scale": "rule"
        }
       ]
@@ -1904,8 +1915,9 @@
      }
     }
    },
-   "composite_default": 44.5,
-   "rank_default": 7
+   "composite_default": 42.3,
+   "rank_default": 7,
+   "refresh_note": "No new figures found in the Nov 17 2026 refresh; values keep their earlier dates."
   },
   {
    "id": "moonshot",
@@ -1923,9 +1935,9 @@
     "note": "Well-established fact"
    },
    "flagship_model": {
-    "value": "Kimi K3.1 Pro (API Oct 23 2026)",
-    "source": "https://letsdatascience.com/news/moonshot-releases-kimi-k31-pro-api-open-weights-due-nov-4-786e160c",
-    "date": "2026-10-23"
+    "value": "Kimi K3.1 Pro (API Oct 23 2026; open weights released Nov 5 2026)",
+    "source": "https://technode.com/2026/11/05/moonshot-ai-releases-kimi-k3-1-pro-model-weights/",
+    "date": "2026-11-05"
    },
    "total_funding_usd": {
     "value": null,
@@ -1987,7 +1999,7 @@
      "value": null,
      "source": null,
      "date": null,
-     "note": "Not found"
+     "note": "Not found. Not re-verified on Nov 17 2026 (leaderboard page could not be read); last good value kept."
     }
    },
    "muscle": {
@@ -2019,10 +2031,10 @@
      "note": "Kimi K3 weights under revenue-tiered license (title only, not fetched)"
     },
     "latest_open_model": {
-     "value": "Kimi K3.1 Pro (weights scheduled Nov 4 2026)",
-     "source": "https://letsdatascience.com/news/moonshot-releases-kimi-k31-pro-api-open-weights-due-nov-4-786e160c",
-     "date": "2026-10-23",
-     "note": "Actual Nov 4 weight release NOT verified; license not stated"
+     "value": "Kimi K3.1 Pro (weights on Hugging Face; ~2.8T total / ~104B active parameters)",
+     "source": "https://technode.com/2026/11/05/moonshot-ai-releases-kimi-k3-1-pro-model-weights/",
+     "date": "2026-11-05",
+     "note": "License terms not stated in the source"
     }
    },
    "slug": "moonshot",
@@ -2035,12 +2047,12 @@
    },
    "scoring": {
     "lanes": {
-     "money": 35.2,
+     "money": 35.3,
      "reach": 0.0,
-     "brains": 78.0,
+     "brains": 70.8,
      "muscle": 0.0,
-     "momentum": 33.3,
-     "openness": 98.2
+     "momentum": 28.6,
+     "openness": 98.3
     },
     "detail": {
      "money": {
@@ -2048,7 +2060,7 @@
       "parts": [
        {
         "label": "Valuation / market cap",
-        "score": 36.3,
+        "score": 36.6,
         "scale": "log"
        },
        {
@@ -2078,7 +2090,7 @@
       "parts": [
        {
         "label": "AA Intelligence Index v5",
-        "score": 78.0,
+        "score": 70.8,
         "scale": "linear"
        },
        {
@@ -2103,7 +2115,7 @@
       "parts": [
        {
         "label": "Releases, last 6 months",
-        "score": 33.3,
+        "score": 28.6,
         "scale": "linear"
        }
       ]
@@ -2112,8 +2124,8 @@
       "disclosed": true,
       "parts": [
        {
-        "label": "Open weights; latest dated Oct 23, 2026",
-        "score": 98.2,
+        "label": "Open weights; latest dated Nov 5, 2026",
+        "score": 98.3,
         "scale": "rule"
        }
       ]
@@ -2162,7 +2174,7 @@
      }
     }
    },
-   "composite_default": 40.8,
+   "composite_default": 38.8,
    "rank_default": 8
   },
   {
@@ -2247,7 +2259,8 @@
       "model": "Mistral Large 4"
      },
      "source": "https://www.stephanmiller.com/model-buzz-roundup-week-of-1028/",
-     "date": "2026-11-03"
+     "date": "2026-11-03",
+     "note": "Not re-verified on Nov 17 2026 (leaderboard page could not be read); last good value kept."
     }
    },
    "muscle": {
@@ -2294,12 +2307,12 @@
    },
    "scoring": {
     "lanes": {
-     "money": 27.8,
+     "money": 27.9,
      "reach": 0.0,
-     "brains": 26.6,
+     "brains": 24.6,
      "muscle": 0.0,
-     "momentum": 16.7,
-     "openness": 99.0
+     "momentum": 14.3,
+     "openness": 97.5
     },
     "detail": {
      "money": {
@@ -2307,7 +2320,7 @@
       "parts": [
        {
         "label": "Valuation / market cap",
-        "score": 31.2,
+        "score": 31.4,
         "scale": "log"
        },
        {
@@ -2337,7 +2350,7 @@
       "parts": [
        {
         "label": "AA Intelligence Index v5",
-        "score": 42.4,
+        "score": 38.5,
         "scale": "linear"
        },
        {
@@ -2362,7 +2375,7 @@
       "parts": [
        {
         "label": "Releases, last 6 months",
-        "score": 16.7,
+        "score": 14.3,
         "scale": "linear"
        }
       ]
@@ -2372,7 +2385,7 @@
       "parts": [
        {
         "label": "Open weights; latest dated Oct 29, 2026",
-        "score": 99.0,
+        "score": 97.5,
         "scale": "rule"
        }
       ]
@@ -2421,8 +2434,9 @@
      }
     }
    },
-   "composite_default": 28.3,
-   "rank_default": 9
+   "composite_default": 27.4,
+   "rank_default": 9,
+   "refresh_note": "No new figures found in the Nov 17 2026 refresh; values keep their earlier dates."
   }
  ],
  "exhibition": [
