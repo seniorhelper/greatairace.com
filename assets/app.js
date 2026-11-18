@@ -137,7 +137,7 @@
   }
   function el(tag, attrs, parent) { var n = document.createElementNS(NS, tag); for (var k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; }
   function css(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
-  var tokens = {}, layer, LIGHT = false;
+  var tokens = {}, layer, LIGHT = false, ZLB = []; // ZLB: fixed zone labels (TUNNEL, SPLASH ZONE, SKYWAY) that racer labels must keep clear of
   function drawTrack() {
     while (svg.firstChild) svg.removeChild(svg.firstChild);
     while (rsvg.firstChild) rsvg.removeChild(rsvg.firstChild);
@@ -202,8 +202,9 @@
     function zl(txt, p, side, col) {
       var q = pt(p, 1.5 + side * (TW / 2 + (PORT ? 30 : 24)) / LANEW);
       var t = el("text", { x: Math.max(70, Math.min(VW - 70, q.x)).toFixed(1), y: (q.y + 6).toFixed(1), "text-anchor": "middle", "font-family": "Orbitron, Inter, sans-serif", "font-weight": 800, "font-size": PORT ? 19 : 15, fill: col, "letter-spacing": 3, filter: gl }, svg);
-      t.textContent = txt;
+      t.textContent = txt; ZLB.push(t);
     }
+    ZLB = [];
     zl("TUNNEL", (ZONE.tunnel[0] + ZONE.tunnel[1]) / 2, 1, neon);
     zl("SPLASH ZONE", (ZONE.splash[0] + ZONE.splash[1]) / 2, -1, water);
     zl("SKYWAY ▲", ZONE.climb[0] + (ZONE.climb[1] - ZONE.climb[0]) * .82, -1, neon2);
@@ -316,6 +317,17 @@
           if (t.x + CR < A.x0 || t.x - CR > A.x1) return;
           var ly = A.y + A.dy - A.h * .35, d = ly - t.y;
           if (Math.abs(d) < CR + A.h * .5) { A.dy += (d >= 0 ? 1 : -1) * 2; moved = true; }
+        });
+      });
+      // zone labels stay put; a racer label that lands on one is nudged up or down clear of it
+      var ZB = ZLB.map(function (z) { try { return z.getBBox(); } catch (e) { return null; } }).filter(Boolean);
+      L.forEach(function (A) {
+        ZB.forEach(function (z) {
+          if (A.x1 < z.x - 4 || z.x + z.width + 4 < A.x0) return;
+          var base = A.y + A.dy, top = base - A.h * .78, bot = base + A.h * .22;
+          if (bot <= z.y - 2 || top >= z.y + z.height + 2) return;
+          if ((top + bot) / 2 < z.y + z.height / 2) A.dy -= bot - (z.y - 3); else A.dy += (z.y + z.height + 3) - top;
+          moved = true;
         });
       });
       if (!moved) break;

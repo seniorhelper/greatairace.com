@@ -28,6 +28,9 @@ Exhibition (not ranked, dead last for now): Big AI Brain — a from-scratch, cro
 - [About](https://www.greatairace.com/about/) · [Contact](https://www.greatairace.com/contact/) · [Privacy](https://www.greatairace.com/privacy/) · [Terms](https://www.greatairace.com/terms/)
 
 ## Articles
+- [AI lab IPOs explained: who is public and who is going public](https://www.greatairace.com/blog/ai-lab-ipos-explained/): Some AI labs trade on a stock exchange, some sit inside public giants, and some are still private. A sourced map of who is where in November 2026.
+- [The AI compute race: who has the most chips and data centers?](https://www.greatairace.com/blog/ai-compute-race-gpus-data-centers/): Chips owned, megawatts online and dollars committed tell three different stories. Here is who leads each one, with Epoch AI data.
+- [Chinese AI labs vs US labs in 2026: where each side leads](https://www.greatairace.com/blog/chinese-ai-labs-vs-us-labs-2026/): US labs lead on top benchmark scores, compute and money. Chinese labs lead open-model usage. How big is the gap? It depends on the yardstick.
 - [Who is winning the AI race in 2026?](https://www.greatairace.com/blog/who-is-winning-the-ai-race-2026/): OpenAI leads the composite, but the lead depends on what you count. A lane-by-lane look at the nine labs, with every number sourced.
 - [OpenAI vs Google DeepMind vs Anthropic: how they compare](https://www.greatairace.com/blog/openai-vs-google-deepmind-vs-anthropic/): Three frontier labs, six lanes, one table. Where each leads, where each trails, and why the answer depends on what you value.
 - [The biggest AI labs by valuation in November 2026](https://www.greatairace.com/blog/biggest-ai-labs-by-valuation/): From Alphabet's trillions to Mistral's billions: valuations and market caps for the nine racers, with dates and caveats.
