@@ -102,7 +102,7 @@ html[data-skin="light"] .hero h1{text-shadow:none}
 .track-box{position:relative;border:1px solid var(--grid);background:#000;border-radius:4px;overflow:hidden}
 html[data-skin="light"] .track-box{background:#f8fbff}
 #track-svg{display:block;width:100%;height:auto}
-.replay{position:absolute;right:8px;bottom:8px;min-height:36px;font-size:.8rem;background:rgba(0,0,0,.55);color:#fff}
+.replay{position:absolute;right:8px;top:8px;min-height:36px;font-size:.8rem;background:rgba(0,0,0,.55);color:#fff}
 html[data-skin="light"] .replay{background:#fff;color:var(--ink)}
 .racer{cursor:pointer}
 .racer:focus{outline:none}

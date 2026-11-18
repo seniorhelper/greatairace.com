@@ -72,55 +72,51 @@
   var svg = document.getElementById("track-svg"), rsvg = document.getElementById("racer-svg"), NS = "http://www.w3.org/2000/svg";
   var LANEW = 22, TW = 72, PORT = false, FS = 18, CR = 22, VW = 1000, VH = 1600;
   var ZONE = {}, PATH = null, LABELS = {};
-  function buildPath() {
+  function buildPath() { // open course: START at the bottom, switchbacks climb the page, AGI finish at the top
     var pts = [], mk = {};
     var W = VW, H = VH, rows = PORT ? 10 : 8, m = PORT ? 18 : 26;
-    var yTop = PORT ? 92 : 86, y1 = PORT ? 250 : 228, yN = H - (PORT ? 250 : 210), yB = H - (PORT ? 86 : 70);
-    var s = (yN - y1) / (rows - 1), r = s / 2, xL = m + TW / 2 + r, xR = W - m - TW / 2 - r, cx = W / 2;
-    var rT = Math.min(70, (y1 - yTop) / 2), rb = Math.min(70, (yB - yN) / 2);
+    var yTop = PORT ? 150 : 140, y0 = H - (PORT ? 240 : 220);
+    var s = (y0 - yTop) / (rows - 1), r = s / 2, xL = m + TW / 2 + r, xR = W - m - TW / 2 - r;
+    var R = PORT ? 62 : 72, R2 = 40, xa = xR, HP = Math.PI / 2;
     function add(x, y) { var L = pts[pts.length - 1]; if (!L || Math.hypot(L.x - x, L.y - y) > 0.5) pts.push({ x: x, y: y }); }
-    function line(x0, y0, x1, y1_, n) { for (var i = 0; i <= n; i++) add(x0 + (x1 - x0) * i / n, y0 + (y1_ - y0) * i / n); }
+    function line(x0, y0_, x1, y1_, n) { for (var i = 0; i <= n; i++) add(x0 + (x1 - x0) * i / n, y0_ + (y1_ - y0_) * i / n); }
     function arc(ax, ay, rr, a0, a1, n) { for (var i = 0; i <= n; i++) { var a = a0 + (a1 - a0) * i / n; add(ax + rr * Math.cos(a), ay + rr * Math.sin(a)); } }
     function mark(k) { mk[k] = pts.length - 1; }
-    var HP = Math.PI / 2;
-    // top straight (AGI line at its start) -> first hairpin down
-    var rt1 = (y1 - yTop) / 2;
-    line(cx, yTop, xR, yTop, 30); arc(xR, yTop + rt1, rt1, -HP, HP, 26);
-    // switchback rows
-    for (var i = 0; i < rows; i++) {
-      var y = y1 + i * s, left = i % 2 === 0;
-      mark("row" + i);
-      if (left) line(xR, y, xL, y, 60); else line(xL, y, xR, y, 60);
-      mark("row" + i + "e");
-      if (i < rows - 1) { if (left) arc(xL, y + r, r, -HP, -3 * HP, 28); else arc(xR, y + r, r, -HP, HP, 28); }
-    }
-    // rows end on the right (even row count) -> hairpin down to the bottom straight
-    var rbt = (yB - yN) / 2;
-    arc(xR, yN + rbt, rbt, -HP, HP, 24);
-    mark("bottom"); line(xR, yB, cx + rb, yB, 30); arc(cx + rb, yB - rb, rb, HP, Math.PI, 16);
-    // the skyway: a gentle S that rises over every row, back to the top straight
+    var Y = function (k) { return y0 - k * s; };
+    // row 0: the start straight along the bottom
+    mark("row0"); line(xL, Y(0), xa, Y(0), 60); mark("row0e");
+    // the skyway loop: dips below the start straight, swings round and climbs OVER it to row 1
     mark("sky0");
-    var y0s = yB - rb, y1s = yTop + rT, A = PORT ? 70 : 120, n = 160;
-    for (i = 1; i <= n; i++) { var t = i / n, e = Math.sin(Math.PI * t); add(cx - A * Math.sin(2 * Math.PI * t) * e * e, y0s + (y1s - y0s) * t); }
+    arc(xa, Y(0) + R, R, -HP, Math.PI, 40); mark("dip1");
+    line(xa - R, Y(0) + R, xa - R, Y(1) + R2, 24);
+    arc(xa - R - R2, Y(1) + R2, R2, 0, -HP, 12);
     mark("sky1");
-    arc(cx + rT, yTop + rT, rT, Math.PI, 3 * HP, 16);
+    // switchback rows climbing to the top
+    for (var k = 1; k < rows; k++) {
+      var left = k % 2 === 1, y = Y(k);
+      mark("row" + k);
+      if (left) line(k === 1 ? xa - R - R2 : xR, y, xL, y, 60); else line(xL, y, xR, y, 60);
+      mark("row" + k + "e");
+      if (k < rows - 1) { if (left) arc(xL, y - r, r, HP, 3 * HP, 28); else arc(xR, y - r, r, HP, -HP, 28); }
+    }
     var tot = 0; pts[0].s = 0;
-    for (i = 1; i <= pts.length; i++) { var a = pts[i - 1], b = pts[i % pts.length]; tot += Math.hypot(b.x - a.x, b.y - a.y); if (i < pts.length) pts[i].s = tot; }
+    for (var i = 1; i < pts.length; i++) { tot += Math.hypot(pts[i].x - pts[i - 1].x, pts[i].y - pts[i - 1].y); pts[i].s = tot; }
     PATH = { pts: pts, len: tot, sky: pts.slice(mk.sky0, mk.sky1 + 1) };
     var f = function (k) { return pts[mk[k]].s / tot; }, lerp = function (a, b, t) { return a + (b - a) * t; };
-    var tr = PORT ? 3 : 2, sr = PORT ? 6 : 5;
+    var tr = PORT ? 4 : 3, sr = PORT ? 7 : 5;
     ZONE = {
-      tunnel: [lerp(f("row" + tr), f("row" + tr + "e"), .06), lerp(f("row" + tr), f("row" + tr + "e"), .3)],
-      splash: [lerp(f("row" + sr), f("row" + sr + "e"), .68), lerp(f("row" + sr), f("row" + sr + "e"), .95)],
-      elev: [f("sky0") - .004, f("sky1") + .004],
-      climb: [f("sky0"), lerp(f("sky0"), f("sky1"), .12)],
-      drop: [lerp(f("sky0"), f("sky1"), .88), f("sky1")]
+      tunnel: [lerp(f("row" + tr), f("row" + tr + "e"), .22), lerp(f("row" + tr), f("row" + tr + "e"), .48)],
+      splash: [lerp(f("row" + sr), f("row" + sr + "e"), .5), lerp(f("row" + sr), f("row" + sr + "e"), .8)],
+      elev: [f("sky0"), f("sky1")],
+      drop: [f("sky0"), lerp(f("sky0"), f("dip1"), .55)],
+      climb: [f("dip1"), lerp(f("dip1"), f("sky1"), .85)]
     };
   }
-  function atP(p) { // arc fraction -> {x, y, a (tangent angle)}
-    var pts = PATH.pts, N = pts.length, s = (((p % 1) + 1) % 1) * PATH.len, lo = 0, hi = N - 1;
+  function atP(p) { // arc fraction (0 = START, 1 = AGI) -> {x, y, a (tangent angle)}
+    var pts = PATH.pts, N = pts.length, s = Math.max(0, Math.min(1, p)) * PATH.len, lo = 0, hi = N - 1;
     while (lo < hi) { var m = (lo + hi + 1) >> 1; if (pts[m].s <= s) lo = m; else hi = m - 1; }
-    var A = pts[lo], B = pts[(lo + 1) % N], segL = (lo + 1 < N ? B.s : PATH.len) - A.s, f = segL ? (s - A.s) / segL : 0;
+    if (lo >= N - 1) lo = N - 2;
+    var A = pts[lo], B = pts[lo + 1], segL = B.s - A.s, f = segL ? (s - A.s) / segL : 0;
     return { x: A.x + (B.x - A.x) * f, y: A.y + (B.y - A.y) * f, a: Math.atan2(B.y - A.y, B.x - A.x), p: p };
   }
   function pt(p, lane) { var q = atP(p), off = (lane - 1.5) * LANEW; q.x += -Math.sin(q.a) * off; q.y += Math.cos(q.a) * off; return q; }
@@ -130,7 +126,7 @@
     for (var i = 0; i < S.length; i += 2) if (Math.abs(S[i].y - q.y) < lim && Math.abs(S[i].x - q.x) < lim) return true;
     return false;
   }
-  function inZone(p, z) { p = ((p % 1) + 1) % 1; return p >= z[0] && p <= z[1]; }
+  function inZone(p, z) { return p >= z[0] && p <= z[1]; }
   function seg(p0, p1) { var L = PATH.len; return PATH.pts.filter(function (q) { return q.s >= p0 * L && q.s <= p1 * L; }); }
   function dOf(a, close) { return a.map(function (q, i) { return (i ? "L" : "M") + q.x.toFixed(1) + " " + q.y.toFixed(1); }).join("") + (close ? "Z" : ""); }
   function geom() {
@@ -166,7 +162,7 @@
       el("path", Object.assign({ d: d, stroke: road, "stroke-width": TW }, L), svg);
       el("path", Object.assign({ d: d, stroke: raised ? pink : neon2, "stroke-opacity": .45, "stroke-width": 1.6, "stroke-dasharray": "12 14" }, L), svg);
     }
-    roadTube(PATH.pts, true, false);                        // the whole circuit
+    roadTube(PATH.pts, false, false);                       // the whole course
     function chev(z, col, rev) {
       var n = 6;
       for (var i = 0; i < n; i++) {
@@ -208,17 +204,26 @@
       var t = el("text", { x: Math.max(70, Math.min(VW - 70, q.x)).toFixed(1), y: (q.y + 6).toFixed(1), "text-anchor": "middle", "font-family": "Orbitron, Inter, sans-serif", "font-weight": 800, "font-size": PORT ? 19 : 15, fill: col, "letter-spacing": 3, filter: gl }, svg);
       t.textContent = txt;
     }
-    zl("TUNNEL", (ZONE.tunnel[0] + ZONE.tunnel[1]) / 2, -1, neon);
+    zl("TUNNEL", (ZONE.tunnel[0] + ZONE.tunnel[1]) / 2, 1, neon);
     zl("SPLASH ZONE", (ZONE.splash[0] + ZONE.splash[1]) / 2, -1, water);
-    zl("SKYWAY ▲", ZONE.climb[0] + .004, -1, neon2);
-    zl("DROP ▼", ZONE.drop[0] - .004, 1, pink);
-    // AGI finish line (checkered, across the road) + start banner
-    var fq = atP(0), rws = 12, rh = (TW + 8) / rws;
-    var gx = el("g", { transform: "translate(" + fq.x.toFixed(1) + "," + fq.y.toFixed(1) + ") rotate(" + (fq.a * 180 / Math.PI).toFixed(1) + ")" }, svg);
-    for (var r = 0; r < rws; r++) for (var cc = 0; cc < 2; cc++)
-      el("rect", { x: cc * 7 - 7, y: -(TW + 8) / 2 + r * rh, width: 7, height: rh, fill: (r + cc) % 2 ? (light ? "#0d1526" : "#ffffff") : (light ? "#ffffff" : "#0d1526") }, gx);
-    var agi = el("text", { x: fq.x - (PORT ? 22 : 26), y: fq.y - TW / 2 - (PORT ? 16 : 12), "text-anchor": "end", "font-family": "Orbitron, Inter, sans-serif", "font-weight": 900, "font-size": PORT ? 34 : 32, fill: neon, filter: gl, "letter-spacing": 6 }, svg);
+    zl("SKYWAY ▲", ZONE.climb[0] + (ZONE.climb[1] - ZONE.climb[0]) * .82, -1, neon2);
+    var dq = atP(ZONE.climb[0]), dt = el("text", { x: (dq.x - TW / 2 - 14).toFixed(1), y: (dq.y + (PORT ? 52 : 50)).toFixed(1), "text-anchor": "end", "font-family": "Orbitron, Inter, sans-serif", "font-weight": 800, "font-size": PORT ? 19 : 15, fill: pink, "letter-spacing": 3, filter: gl }, svg);
+    dt.textContent = "DROP ▼";
+    // checkered START line at the bottom and AGI finish line at the top
+    function checker(p) {
+      var q = atP(p), rws = 12, rh = (TW + 8) / rws;
+      var gx = el("g", { transform: "translate(" + q.x.toFixed(1) + "," + q.y.toFixed(1) + ") rotate(" + (q.a * 180 / Math.PI).toFixed(1) + ")" }, svg);
+      for (var r = 0; r < rws; r++) for (var cc = 0; cc < 2; cc++)
+        el("rect", { x: cc * 7 - 7, y: -(TW + 8) / 2 + r * rh, width: 7, height: rh, fill: (r + cc) % 2 ? (light ? "#0d1526" : "#ffffff") : (light ? "#ffffff" : "#0d1526") }, gx);
+      return q;
+    }
+    var sq = checker(0.002), fq = checker(0.998);
+    var st = el("text", { x: sq.x - 4, y: sq.y + TW / 2 + (PORT ? 34 : 30), "text-anchor": "start", "font-family": "Orbitron, Inter, sans-serif", "font-weight": 900, "font-size": PORT ? 26 : 22, fill: neon2, filter: gl, "letter-spacing": 5 }, svg);
+    st.textContent = "▶ START";
+    var agi = el("text", { x: fq.x - (PORT ? 24 : 28), y: fq.y + (PORT ? 12 : 11), "text-anchor": "end", "font-family": "Orbitron, Inter, sans-serif", "font-weight": 900, "font-size": PORT ? 34 : 32, fill: neon, filter: gl, "letter-spacing": 4 }, svg);
     agi.textContent = "AGI";
+    var fin = el("text", { x: fq.x + 10, y: fq.y - TW / 2 - (PORT ? 18 : 16), "text-anchor": "start", "font-family": "Orbitron, Inter, sans-serif", "font-weight": 800, "font-size": PORT ? 18 : 14, fill: neon, "letter-spacing": 4 }, svg);
+    fin.textContent = "◀ FINISH LINE";
     layer = el("g", { id: "racers" }, rsvg);
     buildTokens();
   }
@@ -250,7 +255,7 @@
     setTimeout(function () { g.classList.remove("wiggle"); then(); }, 750);
     setTimeout(function () { g.classList.remove("glow"); }, 1600);
   }
-  var EXP = 0.012; // Big AI Brain: just off the start line, dead last
+  var EXP = 0.022; // Big AI Brain: just off the start line, dead last
   function buildTokens() {
     var prev = tokens; tokens = {};
     race.racers.forEach(function (r) { tokens[r.id] = tokenFor(r, false); if (prev[r.id]) tokens[r.id].p = prev[r.id].p; });
@@ -361,7 +366,7 @@
       keyList.appendChild(li);
     });
     var lead = standings()[0];
-    var d = document.getElementById("track-desc"); if (d) d.textContent = "Racers placed along a winding neon circuit by composite score. Current leader: " + lead.r.short + " at " + lead.c.toFixed(1) + ".";
+    var d = document.getElementById("track-desc"); if (d) d.textContent = "Racers placed along the course by composite score, higher up means a higher score. Current leader: " + lead.r.short + " at " + lead.c.toFixed(1) + ".";
   }
   /* --- sliders --- */
   var sliders = document.querySelectorAll("[data-weight]");
